@@ -1,12 +1,12 @@
 p {
-	color:pink;
+	color:blue;
 	padding:10px;
 }
 
 #introduction {
 	width:1200px;
 	height:500px;
-	background:black;
+	background:grey;
 }
 
 #homepage {

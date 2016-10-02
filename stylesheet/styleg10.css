@@ -1,0 +1,19 @@
+#description {
+	width:1400px;
+	height:700px; 
+	background:#DDD;
+}
+
+#Fantasy {
+	width:600px;
+	height:500px;
+	margin:10px;
+}
+
+#title {
+	float:100px right;
+}
+
+#links {
+	float:bottom;
+}
