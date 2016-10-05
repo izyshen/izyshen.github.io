@@ -1,0 +1,48 @@
+<html>
+	<head>
+		<title>Grade 11(2012-2013)</title>
+		<link href="stylesheet/styleg11.css" media="screen" rel="stylesheet" type="text/css" />
+	</head>
+
+	<body>
+		<div id="title">
+			<h1>Eleventh Grade</h1>
+		</div>
+		<div class="art1">
+		<div id="description">
+			<img id="Flowers"src="image/IMG_2346.jpg" style="float:right;"/>
+			<p>Title: Bouquet of Joy</p>
+			<p>Focus: The careful details found in flowers</p>
+			<p>Medium: Water colour</p>
+			<p>Notes from the artist: One of my favourite things to draw are flowers because every fold creates so many dynamic shades of red in a rose. </p>
+
+			<img id="incomplete"src="image/IMG_2290.jpg" style="display:none;"/>
+				<div id=button>
+				<button type="button" onclick="document.getElementById('incomplete').style.display='block'">Photos of progress</button>
+				<button type="button" onclick="document.getElementById('incomplete').style.display='none'">Hide</button>
+		</div>
+			<p id="words"></p>
+
+			<script>
+			var text = '{"title": "Title: Bouquet of Joy", "medium": "Medium: Water colour", "inspiration": "Focus: The details found in flowers", "notes": "Notes from the artist: One of my favourite things to draw are flowers because every fold creates so many dynamic shades of red in a rose."}'
+			var obj = JSON.parse(text);
+			document.getElementById("words").innerHTML = 
+			obj.title + "<br>" +
+			obj.medium + "<br>" + 
+			obj.inspiration + "<br>" +
+			obj.notes;
+			</script>
+		</div>
+
+		<div class="art2">
+		<div id="description2">
+			<img id=""
+
+			<div id="links">
+				<li><a href="artwork.html">Home</a></li>
+			</div>
+			</div>
+		</div>
+	</body>
+
+</html>
