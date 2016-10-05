@@ -16,6 +16,22 @@
 			<p>Medium: Pencil Crayon</p>
 			<p>Notes from the artist: I started getting into reading about fantasy books about this time and I really liked dragons. No message here except I wanted to draw something pretty and colourful. I at least did one of the two... </p>
 
+			<p id="words"></p>
+
+			<script>
+			var text = '{"title": "Title: A Home of Magic", "medium": "Medium: pencil crayon", "inspiration": "Inspiration: Entry for an art contest", "notes": "Notes from the artist: I started getting into reading about fantasy books about this time and I really liked dragons. No message here except I wanted to draw something pretty and colourful."}'
+
+			var obj = JSON.parse(text);
+
+			document.getElementById("words").innerHTML = 
+			obj.title + "<br>" +
+			obj.medium + "<br>" + 
+			obj.inspiration + "<br>" +
+			obj.notes;
+
+			</script>
+
+
 			<img id="incomplete"src="image/IMG_0307.jpg" style="display:none;"/>
 			<p onclick="this.innerHTML='tester'"">click</p>
 			<img id="incomplete"src="image/IMG_0336.jpg" style="display:none;"/>
@@ -23,9 +39,9 @@
 				<button type="button" onclick="document.getElementById('incomplete').style.display='block'">Photos of progress</button>
 				<button type="button" onclick="document.getElementById('incomplete').style.display='none'">Hide</button>
 				</div>
-			<script> src="script.js"></script>
 			<div id="links">
 				<li><a href="artwork.html">Home</a></li>
+			</div>
 			</div>
 		</div>
 	</body>

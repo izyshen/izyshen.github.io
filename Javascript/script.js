@@ -5,7 +5,6 @@ function introduction
 		"Hello" + surname + "How are you today?";
 	}
 }
-	
 
 function incomplete {
 	<button type="button" onclick="document.getElementById('incomplete').style.display='block'"/>
