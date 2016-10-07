@@ -13,7 +13,19 @@
 #incomplete {
 	width:200px;
 	height:auto;
-	margin:10px;
-}
+	margin:10px;}
 #button {
 	margin: 10px;}
+#description {
+	width:1400px;
+	height:700px;
+	background:#DDD;}
+#Pinball {
+	width: 500px;
+	height:auto;
+	margin:10px;}
+#incomplete2 {
+	width:200px;
+	height:auto;
+	margin:10px;
+}
