@@ -1,11 +1,12 @@
 #description {
-	width:1400px;
-	height:700px; 
+	width:auto;
+	height:700px;
 	background:#DDD;}
 #Flowers {
-	width:500px;
-	height:auto;
-	margin:10px;}
+	width:auto;
+	height:600px;
+	margin:10px;
+	background: #DDD;}
 #title {
 	float:100px right;}
 #links {
@@ -16,14 +17,15 @@
 	margin:10px;}
 #button {
 	margin: 10px;}
-#description {
+#description2 {
 	width:1400px;
 	height:700px;
-	background:#DDD;}
+	background:white;}
 #Pinball {
 	width: 500px;
 	height:auto;
-	margin:10px;}
+	margin:10px;
+	background:white;}
 #incomplete2 {
 	width:200px;
 	height:auto;
@@ -32,3 +34,15 @@
 	width:auto;
 	height:700px;
 	overflow:auto;}
+#description3 {
+	width:1400px;
+	height:700px;
+	background:#DDD;}
+#childhood {
+	width:500px;
+	height:auto;
+	margin:10px;}
+#incomplete3 {
+	width:200px;
+	height:auto;
+	background:#DDD}
