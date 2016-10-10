@@ -12,25 +12,37 @@
 		<div class="art1">
 		<div id="description">
 			<img id="Flowers"src="image/IMG_2346.jpg" style="float:right;"/>
-			<p>Title: "Bouquet of Joy"</p>
-			<p>Focus: The careful details found in flowers</p>
-			<p>Medium: Water colour</p>
-			<p>Notes from the artist: One of my favourite things to draw are flowers because every fold creates so many dynamic shades of red in a rose. </p>
+			<p id="title1"></p>
+			<p id="focus1"></p>
+			<p id="medium1"></p>
+			<p id="notes1"></p>
 
 			<img id="incomplete"src="image/IMG_2290.jpg" style="display:none;"/>
 				<div id=button>
 				<button type="button" onclick="document.getElementById('incomplete').style.display='block'">Photos of progress</button>
 				<button type="button" onclick="document.getElementById('incomplete').style.display='none'">Hide</button>
 		</div>
-			<p id="words"></p>
 
 			<script>
-			var obj = JSON.parse(text);
-			document.getElementById("words").innerHTML = 
-			obj.title + "<br>" +
-			obj.medium + "<br>" + 
-			obj.inspiration + "<br>" +
-			obj.notes;
+
+			var desc = '{																																				"general" : {																																				"title" : "Title: ", 																																	"focus" : "Focus: ", 																																	"medium" : "Medium: ", 																																	"notes" : "Notes from the Author: "																													}, 																																						"flower" : {																																				"title" : "Bouquet of Joy", 																															"focus" : "the details on flowers", 																													"medium" : "watercolour", 																																"notes" : "One of my favourite things to draw are flowers because every fold creates so many dynamic shades of red in a rose."						}, 																																						"pinball" : {																																				"title" : "Pinball Party", 																																"medium" : "clay, pencil crayon, construction paper, wood, paint",																						"inspiration" : "Charles Bell - an incredible still life painter with extreme care for detail and love for bright colours.",							"notes" : "The background of the board contains facts about Charles Bell. I always tried to add a little more in my art pieces made in school. The addition of wood was unique amonst my classmates; they stuck to using only clay. Believe me when I say I was extremely excited to see this design come to life."																																 					 }, 																																					"child" : {																																					"title" : "",																																			"medium" : "pencil crayons, oil pastel, charcoal",																										"inspiration" : "The impending evil that seems to come with life",																						"notes" : "It is peculiar how joyful and openminded children are when they are young but as we grow, we seem to lose that. That is what this drawing aims to capture: the brightness and optimism of children being corrupted. Not meant to be pessimistic but it is how life seems to be. That is why we should all tap into our inner child and see the world from their point of view from time to time."														}}'
+			var obj = JSON.parse(desc);
+
+			document.getElementById("title1").innerHTML = 
+			obj.general.title + "<br>" + 
+			obj.flower.title + "<br>"; 
+
+			document.getElementById("medium1").innerHTML = 
+			obj.general.medium + "<br>" +
+			obj.flower.medium + "<br>"; 
+
+			document.getElementById("focus1").innerHTML = 
+			obj.general.focus + "<br>" +
+			obj.flower.focus + "<br>"; 
+
+			document.getElementById("notes1").innerHTML = 
+			obj.general.notes + "<br>" + 
+			obj.flower.notes + "<br>";
 			</script>
 		</div>
 		<div class="art2">
