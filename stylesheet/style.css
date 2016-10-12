@@ -1,10 +1,9 @@
 p {
 	color:blue;
 	padding:10px;
-}
-
+}	
 #introduction {
-	width:1200px;
+	width:auto;
 	height:500px;
 	background:grey;
 }
@@ -12,4 +11,28 @@ p {
 #homepage {
 	float:right;
 	margin: 0 10px 10px 0;
+	width:700px;
+	height:400px;
+}
+ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	background-color:#dddddd;
+	position:fixed;
+	width:98.9%;}
+li {
+	float:left;}
+a {
+	display:block;
+	color:white;
+	padding:14px 16px;
+	text-align:center;
+	background-color:#dddddd;}
+li a:hover {
+	background-color: black;
+}
+
+#desc {
+	
 }
