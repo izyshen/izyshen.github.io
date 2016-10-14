@@ -8,7 +8,7 @@
 	float:right;
 	margin:10px;
 	width:auto;
-	height:600px;}
+	height:525px;}
 ul {
 	list-style-type:none;
 	margin:10px;
@@ -35,9 +35,7 @@ li a:hover {
 	height:700px;
 	background:#dddddd;}
 #desc {
-	clear:left;	
-	float:left;
-	top:500px;
-	padding:10px;
+	padding:110px 0px 0px 0px;
+
 }
 

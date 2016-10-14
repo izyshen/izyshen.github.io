@@ -1,16 +1,18 @@
 #description {
 	width:auto;
-	height:700px;
-	background:#DDD;}
+	height:600px;
+	background:#DDD;
+	padding:110px 0px 0px 0px;}
 #Flowers {
 	width:auto;
-	height:600px;
-	margin:10px;
-	background: #DDD;}
+	height:550px;
+	margin:10px;}
 #title {
-	float:100px right;}
-#links {
-	float:bottom;}
+	width:100%;
+	border:5px black;
+	position:fixed;
+	background:white;
+	top:0;}
 #incomplete {
 	width:200px;
 	height:auto;
@@ -19,11 +21,11 @@
 	margin: 10px;}
 #description2 {
 	width:1400px;
-	height:700px;
+	height:600px;
 	background:white;}
 #Pinball {
-	width: 500px;
-	height:auto;
+	width:auto;
+	height:550px;
 	margin:10px;
 	background:white;}
 #incomplete2 {
@@ -36,13 +38,33 @@
 	overflow:auto;}
 #description3 {
 	width:1400px;
-	height:700px;
+	height:600px;
 	background:#DDD;}
 #childhood {
-	width:500px;
-	height:auto;
+	width:auto;
+	height:550px;
 	margin:10px;}
 #incomplete3 {
 	width:200px;
 	height:auto;
 	background:#DDD}
+ul {
+	list-style-type:none;
+	margin:10px;
+	padding:0;
+	background-color:grey;
+	position:fixed;
+	left:0;
+	right:0;
+	top:60px;}
+li {
+	float:left;
+	display:inline;}
+a {
+	display:block;
+	color:white;
+	padding:14px 16px;
+	text-align:center;
+	background-color:grey;}
+li a:hover {
+	background-color: black;}
