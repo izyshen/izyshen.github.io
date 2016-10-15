@@ -35,7 +35,19 @@ li a:hover {
 	height:700px;
 	background:#dddddd;}
 #desc {
-	padding:110px 0px 0px 0px;
-
-}
-
+	padding:110px 0px 0px 0px;}
+.dropbuton {
+	padding:16px;
+	font-size:16px;
+	border:none;
+	cursor:pointer;}
+.dropdown {
+	position:relative;
+	display:inline-block;}
+.dropdown-content {
+	display:none;
+	position:absolute;
+	min-width:160px;
+	box-shadow:0px 8px 16px 0px;}
+.dropdown:hover .dropdown-content {
+	display:block;}
