@@ -1,53 +1,59 @@
+
 #description {
-	width:auto;
-	height:600px;
+	overflow:auto;
 	background:#DDD;
-	padding:110px 0px 0px 0px;}
-#Flowers {
-	width:auto;
-	height:550px;
-	margin:10px;}
-#title {
-	width:100%;
-	border:5px black;
-	position:fixed;
-	background:white;
-	top:0;}
-#incomplete {
-	width:200px;
-	height:auto;
-	margin:10px;}
-#button {
-	margin: 10px;}
-#description2 {
-	width:1400px;
 	height:600px;
-	background:white;}
-#Pinball {
+	margin:10px 0px;
+	text-align:center;}
+#flowers {
 	width:auto;
 	height:550px;
 	margin:10px;
-	background:white;}
+	float:right;}
+#incomplete {
+	width:200px;
+	display:block;
+	height:auto;
+	margin:auto;}
+#button {
+	margin: 10px;}
+#description2 {
+	overflow:auto;
+	height:600px;
+	text-align:center;
+	margin:10px 0px;
+	background:#F5FFFA;}
+#Pinball {
+	width:auto;
+	height:550px;
+	float:right;
+	margin:10px;}
 #incomplete2 {
 	width:200px;
 	height:auto;
-	margin:10px;}
+	display:block;
+	margin:auto;}
 .scroll {
 	width:auto;
-	height:700px;
+	margin-top:75px;
+	height:625px;
 	overflow:auto;}
 #description3 {
-	width:1400px;
+	overflow:auto;
 	height:600px;
+	margin:10px 0px;
+	text-align:center;
 	background:#DDD;}
 #childhood {
 	width:auto;
+	float:right;
 	height:550px;
 	margin:10px;}
 #incomplete3 {
 	width:200px;
 	height:auto;
-	background:#DDD}
+	display:block;
+	margin:auto;}
 ul {
 	list-style-type:none;
 	margin:10px;
@@ -62,9 +68,28 @@ li {
 	display:inline;}
 a {
 	display:block;
-	color:white;
+	color:#F5FFFA;
 	padding:14px 16px;
 	text-align:center;
 	background-color:grey;}
 li a:hover {
 	background-color: black;}
+.dropbutton {
+	padding:0px 0px 0px 0px;
+	font-size:16px;
+	border:none;
+	color:#dddddd;
+	background-color:grey;
+	cursor:pointer;}
+.dropdown {
+	position:relative;
+	display:inline-block;}
+.dropdown-content {
+	display:none;
+	position:absolute;
+	min-width:160px;
+	box-shadow:0px 2px 6px 0px;}
+.dropdown-content:hover a:hover {background-color:dimgrey;}
+.dropbutton:hover a:hover {background-color:dimgrey;}
+.dropdown:hover .dropdown-content {
+	display:block;}

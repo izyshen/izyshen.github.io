@@ -3,23 +3,33 @@
 		<title>Grade 11(2012-2013)</title>
 		<link href="stylesheet/styleg11.css" media="screen" rel="stylesheet" type="text/css" />
 	</head>
-
 	<body>
-	<div class="scroll">
-		<div id="title">
-			<h1>Eleventh Grade</h1>
-		</div>
+	<div class="header">
+		<h1>Eleventh Grade</h1>
 		<nav>
 			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="gr9.html">Grade 9</a></li>
-				<li><a href="gr10.html">Grade 10</a></li>
-				<li><a href="gr11.html">Grade 11</a></li>
+				<div class="dropdown">
+					<button class="dropbutton"><a class="active" href="index.html">Home</a></button>
+				</div>
+				<div class="dropdown">
+					<button class="dropbutton"><a href="gr9.html">Grade 9</a></button>
+				</div>
+				<div class="dropdown">
+					<button class="dropbutton"><a href="gr10.html">Grade 10</a></button>
+				</div>
+				<div class="dropdown">
+					<button class="dropbutton"><a href="gr11.html">Grade 11</a></button>
+					<div class="dropdown-content">
+						<a href="#title2">Pinball</a>
+						<a href="#title3">Childhood</a>
+					</div>
+				</div>
 			</ul>
 		</nav>
-		<div class="art1">
+	</div>
+	<div class="scroll">
 		<div id="description">
-			<img id="Flowers"src="image/IMG_2346.jpg" style="float:right;"/>
+			<img id="flowers"src="image/IMG_2346.jpg"/>
 			<p id="title1"></p>
 			<p id="focus1"></p>
 			<p id="medium1"></p>
@@ -31,10 +41,8 @@
 				<button type="button" onclick="document.getElementById('incomplete').style.display='none'">Hide</button>
 				</div>
 		</div>
-		</div>
-		<div class="art2">
 		<div id="description2">
-			<img id="Pinball"src="image/IMG_2522.jpg" style="float:right;"/>
+			<img id="Pinball"src="image/IMG_2522.jpg"/>
 			<p id="title2"></p>
 			<p id="medium2"></p>
 			<p id="inspiration2"></p>
@@ -46,10 +54,8 @@
 				<button type="button2" onclick="document.getElementById('incomplete2').style.display='none'">Hide</button>
 				</div>
 		</div>
-		</div>
-		<div class="art3">
 		<div id="description3">
-			<img id="Childhood"src="image/IMG_2584.jpg" style="float:right;"/>
+			<img id="Childhood"src="image/IMG_2584.jpg";"/>
 			<p id="title3"></p>
 			<p id="medium3"></p>
 			<p id="inspiration3"></p>
@@ -60,10 +66,9 @@
 				<button type="button3" onclick="document.getElementById('incomplete3').style.display='block'">Photos of Progress</button>
 				<button type="button3" onclick="document.getElementById('incomplete3').style.display='none'">Hide</button>
 		</div>
-		</div>
 					<script>
 
-			var desc = '{																																				"general" : {																																				"title" : "Title: ", 																																	"focus" : "Focus: ", 																																	"medium" : "Medium: ", 																																	"inspiration" : "Inspiration: ",																														"notes" : "Notes from the Author: "																													}, 																																						"flower" : {																																				"title" : "Bouquet of Joy", 																															"focus" : "the details on flowers", 																													"medium" : "watercolour", 																																"notes" : "One of my favourite things to draw are flowers because every fold creates so many dynamic shades of red in a rose."						}, 																																						"pinball" : {																																				"title" : "Pinball Party", 																																"medium" : "clay, pencil crayon, construction paper, wood, paint",																						"inspiration" : "Charles Bell - an incredible still life painter with extreme care for detail and love for bright colours.",							"notes" : "The background of the board contains facts about Charles Bell. I always tried to add a little more in my art pieces made in school. The addition of wood was unique amonst my classmates; they stuck to using only clay. Believe me when I say I was extremely excited to see this design come to life."																																 					 }, 																																					"child" : {																																					"title" : "",																																			"medium" : "pencil crayons, oil pastel, charcoal",																										"inspiration" : "The impending evil that seems to come with life",																						"notes" : "It is peculiar how joyful and openminded children are when they are young but as we grow, we seem to lose that. That is what this drawing aims to capture: the brightness and optimism of children being corrupted. Not meant to be pessimistic but it is how life seems to be. That is why we should all tap into our inner child and see the world from their point of view from time to time."														}}'
+			var desc = '{																																				"general" : {																																				"title" : "Title: ", 																																	"focus" : "Focus: ", 																																	"medium" : "Medium: ", 																																	"inspiration" : "Inspiration: ",																														"notes" : "Notes from the Author: "																													}, 																																						"flower" : {																																				"title" : "Bouquet of Joy", 																															"focus" : "the details on flowers", 																													"medium" : "watercolour", 																																"notes" : "One of my favourite things to draw are flowers because every fold creates so many dynamic shades of red in a rose."						}, 																																						"pinball" : {																																				"title" : "Pinball Party", 																																"medium" : "clay, pencil crayon, construction paper, wood, paint",																						"inspiration" : "Charles Bell - an incredible still life painter with extreme care for detail and love for bright colours.",							"notes" : "The background of the board contains facts about Charles Bell. I always tried to add a little more in my art pieces made in school. The addition of wood was unique amonst my classmates; they stuck to using only clay. Believe me when I say I was extremely excited to see this design come to life."																																 					 }, 																																					"child" : {																																					"title" : "Childhood",																																	"medium" : "pencil crayons, oil pastel, charcoal",																										"inspiration" : "The impending evil that seems to come with life",																						"notes" : "It is peculiar how joyful and openminded children are when they are young but as we grow, we seem to lose that. That is what this drawing aims to capture: the brightness and optimism of children being corrupted. Not meant to be pessimistic but it is how life seems to be. That is why we should all tap into our inner child and see the world from their point of view from time to time."														}}'
 			var obj = JSON.parse(desc);
 
 			document.getElementById("title1").innerHTML = 
@@ -117,7 +122,6 @@
 			</script>
 			</div>
 		</div>
-	</div>
 	</div>
 	</body>
 </html>
