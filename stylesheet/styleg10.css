@@ -16,3 +16,8 @@
 	margin:10px;}
 #button {
 	margin: 10px;}
+.scroll {
+	width:auto;
+	margin-top:75px;
+	height:625px;
+	overflow:auto;}

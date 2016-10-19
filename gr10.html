@@ -2,12 +2,32 @@
 	<head>
 		<title>Grade 10(2011-2012)</title>
 		<link href="stylesheet/styleg10.css" media="screen" rel="stylesheet" type="text/css" />
+		<link href="stylesheet/stylemenu.css" media="screen" rel="stylesheet" type="text/css"/>		
 	</head>
-
-	<body>
+	<body id="gr10body">
+<div class="header">
 		<div id="title">
 			<h1>Tenth Grade</h1>
 		</div>
+<ul>
+	<div class="dropdown">
+		<button class="dropbutton"><a class="index" href="index.html">Home</a></button>
+	</div>
+	<div class="dropdown">
+		<button class="dropbutton"><a class="gr9" href="gr9.html">Grade 9</a></button>
+	</div>
+	<div class="dropdown">
+		<button class="dropbutton"><a class="gr10" href="gr10.html">Grade 10</a></button>
+	</div>
+	<div class="dropdown">
+		<button class="dropbutton"><a class="active" href="gr11.html">Grade 11</a></button>
+		<div class="dropdown-content">
+			<a href="gr10.html">Grade 10</a>
+		</div>
+	</div>
+</ul>
+</div>
+		<div class="scroll">
 		<div class="art1">
 		<div id="description">
 			<img id="Fantasy"src="image/IMG_0377.JPG" style="float:right;"/>
@@ -16,7 +36,7 @@
 			<p>Medium: Pencil Crayon</p>
 			<p>Notes from the artist: I started getting into reading about fantasy books about this time and I really liked dragons. No message here except I wanted to draw something pretty and colourful. I at least did one of the two... </p>
 
-			<img id="incomplete"src="image/IMG_0307.jpg" style="display:none;"/>
+			<img id="incomplete"src="image/IMG_0307.JPG" style="display:none;"/>
 				<div id=button>
 				<button type="button" onclick="document.getElementById('incomplete').style.display='block'">Photos of progress</button>
 				<button type="button" onclick="document.getElementById('incomplete').style.display='none'">Hide</button>
@@ -42,6 +62,7 @@
 				<li><a href="index.html">Home</a></li>
 			</div>
 			</div>
+		</div>
 		</div>
 	</body>
 

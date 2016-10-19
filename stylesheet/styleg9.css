@@ -1,11 +1,18 @@
 #description {
-	width:1400px;
-	height:700px; 
+	overflow:auto;
 	background:#DDD;
+	height:600px;
+	margin:10px 0px;
+	text-align:center;
 }
-
 #phoenix {
-	width:600px;
-	height:500px;
+	width:auto;
+	height:550px;
 	margin:10px;
+	float:right;
 }
+.scroll {
+	width:auto;
+	margin-top:75px;
+	height:625px;
+	overflow:auto;}
