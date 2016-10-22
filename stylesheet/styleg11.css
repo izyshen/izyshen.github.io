@@ -1,4 +1,6 @@
-
+h1 {
+	background:white;
+}
 #description {
 	overflow:auto;
 	background:#DDD;
@@ -110,9 +112,6 @@ li a:hover {
   width: 100%;
   list-style: none;
   text-align: center;
-}
-.active {
-  height: 130px;
 }
 .active li {
   position: absolute;

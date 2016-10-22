@@ -1,9 +1,4 @@
-#title {
-	width:100%;
-	border:5px black;
-	position:fixed;
-	background:white;
-	top:0;}
+
 #homepage {
 	float:right;
 	margin:10px;
@@ -30,12 +25,16 @@ a {
 li a:hover {
 	background-color: black;}
 #introduction {
-	margin:2px;
+	overflow:auto;
+	background:#DDD;
+	height:600px;
+	margin:10px 0px;
+	text-align:center;}
+.scroll {
 	width:auto;
-	height:700px;
-	background:#dddddd;}
-#desc {
-	padding:110px 0px 0px 0px;}
+	margin-top:75px;
+	height:625px;
+	overflow:auto;}
 .dropbutton {
 	padding:0px 0px 0px 0px;
 	font-size:16px;

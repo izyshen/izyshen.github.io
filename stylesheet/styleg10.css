@@ -1,7 +1,9 @@
 #description {
-	width:1400px;
-	height:700px; 
-	background:#DDD;}
+	overflow:auto;
+	background:#DDD;
+	height:600px;
+	margin:10px 0px;
+	text-align:center;}
 #Fantasy {
 	width:600px;
 	height:auto;
