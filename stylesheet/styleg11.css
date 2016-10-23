@@ -40,12 +40,18 @@ h1 {
 	margin-top:75px;
 	height:625px;
 	overflow:auto;}
-#description3 {
+.boxwhite {
 	overflow:auto;
 	height:600px;
 	margin:10px 0px;
-	text-align:center;
+	background:white;}
+.boxgrey {
+	overflow:auto;
+	height:600px;
+	margin:10px 0px;
 	background:#DDD;}
+.description {
+	text-align:center;}
 #childhood {
 	width:auto;
 	float:right;
@@ -91,7 +97,7 @@ li a:hover {
 .dropbutton:hover a:hover {background-color:dimgrey;}
 .dropdown:hover .dropdown-content {
 	display:block;}
-.carouselbox {
+.carouselbox1 {
   font-family: helvetica,sans-serif;
   font-size: 14px;
   width: 100px;
@@ -130,7 +136,7 @@ li a:hover {
   z-index: 10;
   position: relative;
 }
-.carouselbox button {
+.carouselbox1 button {
   border: none;
   display: none;
 }
@@ -145,3 +151,98 @@ li a:hover {
 	height:90px;
 	width:auto;
 }
+.carouselbox2 {
+  font-family: helvetica,sans-serif;
+  font-size: 14px;
+  width: 100px;
+  position: relative;
+  margin: 1em;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 10px #ccc;
+  overflow: hidden;
+}
+.content {
+  margin: 0;
+  padding: 0;
+}
+.content li {
+  font-size: 100px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  list-style: none;
+  text-align: center;
+}
+.active {
+  height: 130px;
+}
+.active li {
+  position: absolute;
+  top: 200px;
+}
+.active li.current {
+  top: 30px;
+}
+.active .buttons {
+  padding: 5px 0;
+  background: #eee;
+  text-align: center;
+  z-index: 10;
+  position: relative;
+}
+.carouselbox2 button {
+  border: none;
+  display: none;
+}
+.active button {
+  display: block;
+} 
+
+.carouselbox3 {
+  font-family: helvetica,sans-serif;
+  font-size: 14px;
+  width: 100px;
+  position: relative;
+  margin: 1em;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 10px #ccc;
+  overflow: hidden;
+}
+.content {
+  margin: 0;
+  padding: 0;
+}
+.content li {
+  font-size: 100px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  list-style: none;
+  text-align: center;
+}
+.active {
+  height: 130px;
+}
+.active li {
+  position: absolute;
+  top: 200px;
+}
+.active li.current {
+  top: 30px;
+}
+.active .buttons {
+  padding: 5px 0;
+  background: #eee;
+  text-align: center;
+  z-index: 10;
+  position: relative;
+}
+.carouselbox3 button {
+  border: none;
+  display: none;
+}
+.active button {
+  display: block;
+} 
+.prev {margin:0px 10px 0px 10px;}
+.next {margin:0px 10px 0px 10px;}

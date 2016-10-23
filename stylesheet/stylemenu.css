@@ -17,7 +17,7 @@
 .dropbutton:hover a:hover {background-color:dimgrey;}
 .dropdown:hover .dropdown-content {
 	display:block;}
-.active {background-color:black;
+.activepg {background-color:black;
 	height:22px;}
 ul {
 	list-style-type:none;
