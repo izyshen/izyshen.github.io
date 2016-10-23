@@ -94,7 +94,7 @@ li a:hover {
 .carouselbox {
   font-family: helvetica,sans-serif;
   font-size: 14px;
-  width: 200px;
+  width: 100px;
   position: relative;
   margin: 1em;
   border: 1px solid #ccc;
@@ -112,6 +112,9 @@ li a:hover {
   width: 100%;
   list-style: none;
   text-align: center;
+}
+.active {
+  height: 130px;
 }
 .active li {
   position: absolute;
@@ -139,6 +142,6 @@ li a:hover {
   left: -2000px;
 }
 .incompleteimages {
-	height:100px;
+	height:90px;
 	width:auto;
 }
