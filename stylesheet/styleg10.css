@@ -1,3 +1,8 @@
+h1 {
+	background:white;
+	position:fixed;
+	top:0px;
+}
 #description {
 	overflow:auto;
 	background:#DDD;
@@ -8,10 +13,6 @@
 	width:600px;
 	height:auto;
 	margin:10px;}
-#title {
-	float:100px right;}
-#links {
-	float:bottom;}
 #incomplete {
 	width:300px;
 	height:250px;
@@ -20,25 +21,6 @@
 	margin: 10px;}
 .scroll {
 	width:auto;
-	margin-top:75px;
+	margin-top:120px;
 	height:625px;
 	overflow:auto;}
-.dropbutton {
-	padding:0px 0px 0px 0px;
-	font-size:16px;
-	border:none;
-	color:#dddddd;
-	background-color:grey;
-	cursor:pointer;}
-.dropdown {
-	position:relative;
-	display:inline-block;}
-.dropdown-content {
-	display:none;
-	position:absolute;
-	min-width:160px;
-	box-shadow:0px 2px 6px 0px;}
-.dropdown-content:hover a:hover {background-color:dimgrey;}
-.dropbutton:hover a:hover {background-color:dimgrey;}
-.dropdown:hover .dropdown-content {
-	display:block;}	

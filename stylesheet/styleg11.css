@@ -1,54 +1,33 @@
 h1 {
 	background:white;
+	position:fixed;
+	top:0px;
+	width:100%;
 }
-#description {
-	overflow:auto;
-	background:#DDD;
-	height:600px;
-	margin:10px 0px;
-	text-align:center;}
 #flowers {
 	width:auto;
 	height:550px;
 	margin:10px;
 	float:right;}
-#incomplete {
-	width:200px;
-	display:block;
-	height:auto;
-	margin:auto;}
-#button {
-	margin: 10px;}
-#description2 {
-	overflow:auto;
-	height:600px;
-	text-align:center;
-	margin:10px 0px;
-	background:#F5FFFA;}
 #Pinball {
 	width:auto;
 	height:550px;
 	float:right;
 	margin:10px;}
-#incomplete2 {
-	width:200px;
-	height:auto;
-	display:block;
-	margin:auto;}
 .scroll {
 	width:auto;
-	margin-top:75px;
+	margin-top:120px;
 	height:625px;
 	overflow:auto;}
 .boxwhite {
 	overflow:auto;
-	height:600px;
+	position:static;
 	margin:10px 0px;
 	background:white;}
 .boxgrey {
 	overflow:auto;
-	height:600px;
 	margin:10px 0px;
+	position:static;
 	background:#DDD;}
 .description {
 	text-align:center;}
@@ -86,6 +65,7 @@ li a:hover {
   border: 1px solid #ccc;
   box-shadow: 2px 2px 10px #ccc;
   overflow: hidden;
+  margin:auto;
 }
 .content {
   margin: 0;
@@ -136,7 +116,7 @@ li a:hover {
   font-size: 14px;
   width: 100px;
   position: relative;
-  margin: 1em;
+  margin: auto;
   border: 1px solid #ccc;
   box-shadow: 2px 2px 10px #ccc;
   overflow: hidden;
@@ -177,7 +157,6 @@ li a:hover {
 .active button {
   display: block;
 } 
-
 .carouselbox3 {
   font-family: helvetica,sans-serif;
   font-size: 14px;
@@ -187,6 +166,7 @@ li a:hover {
   border: 1px solid #ccc;
   box-shadow: 2px 2px 10px #ccc;
   overflow: hidden;
+  margin:auto;
 }
 .content {
   margin: 0;
