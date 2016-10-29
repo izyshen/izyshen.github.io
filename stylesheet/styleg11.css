@@ -1,9 +1,3 @@
-h1 {
-	background:white;
-	position:fixed;
-	top:0px;
-	width:100%;
-}
 #flowers {
 	width:auto;
 	height:550px;
@@ -36,27 +30,6 @@ h1 {
 	float:right;
 	height:550px;
 	margin:10px;}
-ul {
-	list-style-type:none;
-	margin:10px;
-	height:50;
-	padding:0;
-	background-color:grey;
-	position:fixed;
-	left:0;
-	right:0;
-	top:60px;}
-li {
-	float:left;
-	display:inline;}
-a {
-	display:block;
-	color:#F5FFFA;
-	padding:14px 16px;
-	text-align:center;
-	background-color:grey;}
-li a:hover {
-	background-color: black;}
 .carouselbox1 {
   font-family: helvetica,sans-serif;
   font-size: 14px;

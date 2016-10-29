@@ -1,32 +1,13 @@
-h1 {
-	background:white;
+#title {
+	background-color:white;
 	position:fixed;
 	top:0px;
+	width:100%;
 }
 #homepageimg {
 	width:auto;
 	margin:auto; 
 	height:525px;}
-ul {
-	list-style-type:none;
-	margin:10px;
-	padding:0;
-	background-color:grey;
-	position:fixed;
-	left:0;
-	right:0;
-	top:60px;}
-li {
-	float:left;
-	display:inline;}
-a {
-	display:block;
-	color:white;
-	padding:14px 16px;
-	text-align:center;
-	background-color:grey;}
-li a:hover {
-	background-color: black;}
 #introduction {
 	overflow:auto;
 	background:#DDD;
