@@ -1,0 +1,11 @@
+.textbox {
+	height:auto;
+	width:33%;
+	color:black;
+	background-color:#DDD;
+	border-color:black;
+	border:10px;
+	margin-top:120px;
+	height:625px;
+	overflow:auto;}
+

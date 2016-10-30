@@ -25,6 +25,7 @@
 	padding:0;
 	background-color:grey;
 	position:fixed;
+	text-align:center;
 	left:0;
 	right:0;
 	top:60px;}
@@ -35,6 +36,7 @@ ul {
 	padding:0;
 	background-color:grey;
 	position:fixed;
+	text-align:center;
 	left:0;
 	right:0;
 	top:60px;}
@@ -52,6 +54,7 @@ li a:hover {
 #title {
 	background-color:white;
 	position:fixed;
+	text-align:center;
 	top:0px;
 	width:100%;	
 }
