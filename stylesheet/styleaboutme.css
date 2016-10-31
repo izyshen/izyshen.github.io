@@ -1,11 +1,27 @@
-.textbox {
-	height:auto;
-	width:33%;
-	color:black;
+.scroll {
+	width:auto;
+	margin-top:120px;}
+.textboxgrey {
+	width:32%;
 	background-color:#DDD;
-	border-color:black;
-	border:10px;
-	margin-top:120px;
-	height:625px;
-	overflow:auto;}
-
+	margin:5px;
+	height:300px;
+	overflow:auto;
+	display:inline-block;
+	border-radius:5px;}
+.textboxwhite {
+	width:32%;
+	background-color:white;
+	margin:5px;
+	height:300px;
+	overflow:auto;
+	display:inline-block;
+	border-radius:5px;}
+.textboxwhite:hover {
+	background-color:#F0FFFF;
+	box-shadow:5px 5px 5px grey;
+}
+.textboxgrey:hover {
+	background-color:#F0FFFF;
+	box-shadow:5px 5px 5px grey;
+}
