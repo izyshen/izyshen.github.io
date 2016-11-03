@@ -52,13 +52,20 @@ a {
 li a:hover {
 	background-color: black;}
 #title {
-	background-color:white;
+	background-color:#F0FFFF;
 	position:fixed;
 	text-align:center;
 	top:0px;
 	width:100%;	
 	font-family: 'angelina';
 	font-size:20px;}
+#bottom {
+	background-color:#F0FFFF;
+	position:fixed;
+	bottom:0px;
+	height:80px;
+	width:100%;
+}
 @font-face {
 	font-family: 'angelina';
 	src: url('./fonts/angelina.eot');
