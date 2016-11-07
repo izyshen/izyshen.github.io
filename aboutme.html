@@ -9,8 +9,8 @@
 			<h1>About Me</h1>
 		</div>
 		<nav>
-			<ul>
-				<div class="dropdown">
+			<ul id="navigation-bar">
+				<div class="dropdown">			
 					<button class="dropbutton"><a class="index" href="index.html">Home</a></button>
 				</div>
 				<div class="dropdown">
@@ -33,24 +33,26 @@
 			</ul>
 		</nav>
 		<div class="scroll">
-			<div class="textboxgrey">
-				<p id="test"></p>
-			</div>
-			<div class="textboxwhite">
-				<img class="image" src="image/IMG_0563.JPG"/>
-			</div>		
-			<div class="textboxgrey">
-				<p>Pnt.</p>
-			</div>				
-			<div class="textboxwhite">
-				<p>sng</p>
-			</div>
-			<div class="textboxgrey">
-				<p>Insertinfohere.</p>
-			</div>		
-			<div class="textboxwhite">
-				<p>mus</p>
-			</div>
+				<div class="textboxgrey">							
+					<p id="test"></p>
+				</div>
+				<div class="textboxwhite">
+					<div class="wrapper">			
+						<a class="lightbox_trigger" href="image/IMG_0563.JPG">Tree</a>
+					</div>
+				</div>		
+				<div class="textboxgrey">
+					<img class="image" src="image/IMG_0563.JPG"/>
+				</div>				
+				<div class="textboxwhite">
+					<p>sng</p>
+				</div>
+				<div class="textboxgrey">
+					<p>Insertinfohere.</p>
+				</div>		
+				<div class="textboxwhite">
+					<p>mus</p>
+				</div>
 			<script>
 					var items = ["fish", "dog", "cat", "tom"];
 				    var text = "";
@@ -63,5 +65,7 @@
 		</div>
 		<div id="bottom">
 		</div>	
+		<script src="https://code.jquery.com/jquery-1.6.2.min.js"></script>
+		<script src="Javascript/aboutme.js"></script>		
 	</body>
 </html>	

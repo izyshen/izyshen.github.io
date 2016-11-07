@@ -29,7 +29,7 @@
 	left:0;
 	right:0;
 	top:60px;}
-ul {
+#navigation-bar {
 	list-style-type:none;
 	margin:10px;
 	height:50;
@@ -40,17 +40,12 @@ ul {
 	left:0;
 	right:0;
 	top:60px;}
-li {
-	float:left;
-	display:inline;}
 a {
 	display:block;
 	color:#F5FFFA;
 	padding:14px 16px;
 	text-align:center;
 	background-color:grey;}
-li a:hover {
-	background-color: black;}
 #title {
 	background-color:#F0FFFF;
 	position:fixed;
