@@ -4,11 +4,11 @@ body {
 	background:#F0FFFF;
 	text-align:center;
 }
-#lightbox {
+#wrapper {
 	width:600px; 
-    margin:0 auto; /*centers the div horizontally in all browsers (except IE)*/
+    margin:0 auto;
     background:#fff; 
-    text-align:left; /*resets text alignment from body tag */
+    text-align:left; 
     border:1px solid #ccc;
     border-top:none; 
     padding:25px; 
@@ -20,4 +20,24 @@ body {
     -moz-box-shadow:0 0 5px #ccc;
     -webkit-box-shadow:0 0 5px #ccc;
 }
-
+#lightbox {
+    position:fixed;
+    top:0; 
+    left:0; 
+    width:100%; 
+    height:100%; 
+    background:url(overlay.png) repeat; 
+    text-align:center;
+}
+#lightbox p {
+    text-align:right;
+    color:#fff;
+    margin-right:20px;
+    font-size:12px;
+}
+#lightbox img {
+    max-width:940px;
+    box-shadow:0 0 25px #111;
+    -webkit-box-shadow:0 0 25px #111;
+    -moz-box-shadow:0 0 25px #111;
+}

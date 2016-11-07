@@ -5,7 +5,8 @@
 		<link href="stylesheet/lightbox.css" media="screen" rel="stylesheet" type="text/css"/>		
 	</head>
 	<body>
-		<div id="lightbox">
+		<div id="wrapper">
+
 			<h1>Lightbox Testing</h1>
 			<p>Text:
 				<ul>
@@ -18,5 +19,39 @@
 				</ul>
 			</p>
 		</div>   <!-- #/lightbox -->
+		<script src="https://code.jquery.com/jquery-1.6.2.min.js"></script>
+		<script>
+			jQuery(document).ready(function($) {
+				$('.lightbox_trigger').click(function(e) {
+					e.preventDefault();
+					var image_href = $(this).attr("href");
+					if ($('#lightbox').length > 0) { // #lightbox exists
+						//insert img tag with clicked link's href as src value
+						$('#content').html('<img src="'+ image_href + '" />');
+					   	
+						//show lightbox window - you can use a transition here if you want, i.e. .show('fast')
+						$('#lightbox').show();
+					}
+					else { //#lightbox does not exist 
+
+						//create HTML markup for lightbox window
+						var lightbox = 
+						'<div id="lightbox">' +
+							'<p>Click to close</p>' +
+							'<div id="content">' + //insert clicked link's href into img src
+								'<img src="' + image_href +'" />' +
+							'</div>' +	
+						'</div>';
+							
+						//insert lightbox HTML into page
+						$('body').append(lightbox);
+					}
+				});
+					$('#lightbox').live('click', function() {
+						$('#lightbox').hide();
+				});
+			});
+		</script>
 	</body>
 </html>
+
