@@ -29,19 +29,10 @@
 	height:300px;
 	margin-left:25%;}
 #wrapper {
-	width:600px; 
     margin:0 auto;
     background:#fff; 
     text-align:left; 
-    border:1px solid #ccc;
     border-top:none; 
-    padding:25px; 
-    border-radius:0 0 5px 5px;
-    -moz-border-radius:0 0 5px 5px;
-    -webkit-border-radius: 0 0 5px 5px; 
-    box-shadow:0 0 5px #ccc;
-    -moz-box-shadow:0 0 5px #ccc;
-    -webkit-box-shadow:0 0 5px #ccc;
 }
 #lightbox {
     position:fixed;
@@ -66,9 +57,11 @@
     -moz-box-shadow:0 0 25px #111;
 }
 .lightbox_trigger {
-	width:100%;
+	width:410px;
+	height:270px;
 	background-color:white;
-	margin:5px;
-	height:300px;
 	display:inline-block;
 	border-radius:5px;}
+.lightbox_trigger:hover {
+	background-color:#F0FFFF;	
+}
