@@ -29,7 +29,3 @@ jQuery(document).ready(function($) {
 	});
 });
 
-// function addtoalbum($link) {
-// 	self.album.push({
-// 		link: $link.attr('href'),
-// 		title: $link.attr('data-title') || $link-attr(title')}
