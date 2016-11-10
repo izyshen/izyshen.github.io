@@ -14,7 +14,7 @@ jQuery(document).ready(function($) {
 			//create HTML markup for lightbox window
 			var lightbox = 
 			'<div id="lightbox">' +
-				'<p>Click to close</p>' +
+				'<p id=nature-description>I feel most at peace when surrounded by nature.</p>' +
 				'<div id="content">' + //insert clicked link's href into img src
 					'<img src="' + image_href +'" />' +
 				'</div>' +	
@@ -28,3 +28,8 @@ jQuery(document).ready(function($) {
 			$('#lightbox').hide();
 	});
 });
+
+// function addtoalbum($link) {
+// 	self.album.push({
+// 		link: $link.attr('href'),
+// 		title: $link.attr('data-title') || $link-attr(title')}
