@@ -1,4 +1,4 @@
-var gr11 = {
+var gr11 = [{
 	"flower" : {
 		"title" : "Bouquet of Joy", 
 		"focus" : "the details on flowers", 
@@ -17,7 +17,7 @@ var gr11 = {
 		"inspiration" : "Inspiration: The impending evil that seems to come with life"
 		"notes" : "It's peculiar how joyful and openminded children are when they are young but as we grow, we seem to lose that. That's what this drawing aims to capture: the brightness and optimism of children being corrupted. I don't mean this to be pessimistic but it is how life seems to be. That's why we should all tap into our inner child and see the world from their point of view from time to time."
 	}
-}
+}]
 
 var gr10 = {
 	"title" : "A Home of Magic", 

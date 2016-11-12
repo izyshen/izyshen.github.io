@@ -1,8 +1,8 @@
 function button1() {
-	document.getElementById("incomplete").style.display='block';}
+  document.getElementById("incomplete").style.display='block';}
 function button2() {
-	document.getElementById("incomplete").style.display='none';}
-
+  document.getElementById("incomplete").style.display='none';}
+  
 carousel = (function(){
   var box = document.querySelector('.carouselbox1');
   var next = box.querySelector('.next');
@@ -103,19 +103,27 @@ carousel = (function(){
   });
   navigate(0);
 })();
-
+// JSON 
 var xobj = new XMLHttpRequest();
 xobj.overrideMimeType("application/json");
 xobj.open('GET', 'Javascript/master.json', true);
 xobj.onreadystatechange = function () {
   if (xobj.readyState == 4 && xobj.status == "200") {
     // .open will NOT return a value but simply returns undefined in async mode so use a callback
-    whateverYourFunctionIs(xobj.responseText);
+    var gr11 = JSON.parse(xobj.responseText);
+    myfunction(gr11);
   }
 }
-xobj.send(null);
+  // xobj.send(null);
 
-var obj = JSON.parse(desc);
+function myfunction(text) {
+  var out = "";
+  var i;
+  for (i = 0; i < text.length; i++) {
+    out += '<a href="' + text[i].url + '">' + text[i]display + '</a><br>';
+  }
+
+// var obj = JSON.parse(desc);
 
 document.getElementById("title1").innerHTML = 
 obj.general.title + "<br>" + 

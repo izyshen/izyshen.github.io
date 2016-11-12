@@ -29,3 +29,10 @@ jQuery(document).ready(function($) {
 	});
 });
 
+var items = ["fish", "dog", "cat", "tom"];
+var text = "";
+var i;
+for(i = 0; i < items.length; i++) {
+    text += items[i] + "<br>";
+}
+document.getElementById("test").innerHTML = text;
