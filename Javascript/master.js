@@ -1,4 +1,5 @@
-var gr11 = [{
+myFunction([
+{
 	"flower" : {
 		"title" : "Bouquet of Joy", 
 		"focus" : "the details on flowers", 
@@ -17,24 +18,25 @@ var gr11 = [{
 		"inspiration" : "Inspiration: The impending evil that seems to come with life"
 		"notes" : "It's peculiar how joyful and openminded children are when they are young but as we grow, we seem to lose that. That's what this drawing aims to capture: the brightness and optimism of children being corrupted. I don't mean this to be pessimistic but it is how life seems to be. That's why we should all tap into our inner child and see the world from their point of view from time to time."
 	}
-}]
-
-var gr10 = {
-	"title" : "A Home of Magic", 
-	"medium" : "pencil crayon", 
-	"notes" : "Entry to an art contest. I started getting into reading about fantasy books about this time and I really liked dragons. No message here except I wanted to draw something pretty and colourful. "
 }
-		document.write(gr11.flower.title);
+]);
+
+// var gr10 = {
+// 	"title" : "A Home of Magic", 
+// 	"medium" : "pencil crayon", 
+// 	"notes" : "Entry to an art contest. I started getting into reading about fantasy books about this time and I really liked dragons. No message here except I wanted to draw something pretty and colourful. "
+// }
+// 		document.write(gr11.flower.title);
 
 
 
-			<div id="title1"></div>
-			<script src="Javascript/master.js"></script>
-			function title() {
-	document.write('Title: ' gr11.flower.title);
-	document.getElementById("title1").innerHTML
-}
+// 			<div id="title1"></div>
+// 			<script src="Javascript/master.js"></script>
+// 			function title() {
+// 	document.write('Title: ' gr11.flower.title);
+// 	document.getElementById("title1").innerHTML
+// }
 
-var obj = JSON.parse(gr11);
-document.getElementById("title1").innerHTML = 
-document.write(gr11.flower.title);
+// var obj = JSON.parse(gr11);
+// document.getElementById("title1").innerHTML = 
+// document.write(gr11.flower.title);
