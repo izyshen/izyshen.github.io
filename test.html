@@ -2,7 +2,22 @@
 <html>
 <body>
 	<div id="desc"></div>
+
 	<script>
+	var xmlhttp = new XMLHttpRequest();
+	var url = "text.txt";
+
+	xmlhttp.onreadystatechange = function() {
+		if (this.readyState == 4 && this.status == 200) {
+			var myArr = JSON.parse(this.responseText);
+			textdisplay(descstorage);
+		}
+	};
+	xmlhttp.open("GET", url, true);
+	xmlhttp.send();
+	
+	// textdisplay(descstorage);
+
 	function textdisplay(arr) {
 		var out = "";
 		var i;
