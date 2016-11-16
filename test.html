@@ -6,13 +6,13 @@
 	function textdisplay(arr) {
 		var out = "";
 		var i;
-		for(i = 0; i<arr.length; i++) {
-			out += '<a href="' + arr[i].url + '">' + 
-			arr[i].display + '</a><br>';
+		for(i = 0; i < arr.length; i++) {
+			out += arr[i].title + arr[i].medium;
 		}
 		document.getElementById("desc").innerHTML = out;
 	}
 	</script>
 	<script src="Javascript/test.js"></script>
+
 </body>
 </html>
