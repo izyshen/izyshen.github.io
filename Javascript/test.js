@@ -1,37 +1,5 @@
-// var descstorage = [
-// {
-// 	"title" : "Flowers",
-// 	"medium" : "Watercolour"
-// }, 
-// {
-// 	"title" : "Pinball", 
-// 	"medium" : "Wood, clay, paint, construction paper"
-// }, 
-// {
-// 	"title" : "Childhood", 
-// 	"medium" : "Oil Pastel"
-// }
-// ]; 
-
-// textdisplay([
-// {
-// 	"title" : "Flowers",
-// 	"medium" : "Watercolour"
-// }, 
-// {
-// 	"title" : "Pinball", 
-// 	"medium" : "Wood, clay, paint, construction paper"
-// }, 
-// {
-// 	"title" : "Childhood", 
-// 	"medium" : "Oil Pastel"
-// }
-// ]); 
-
-
-
 var xmlhttp = new XMLHttpRequest();
-var url = "Javascript/text.txt";
+var url = "text.txt";
 
 xmlhttp.onreadystatechange = function() {
 	if (this.readyState == 4 && this.status == 200) {
@@ -39,22 +7,23 @@ xmlhttp.onreadystatechange = function() {
 		textdisplay(myArr);
 	}
 };
-// 		textdisplay([
-// {
-// 	"title" : "Flowers",
-// 	"medium" : "Watercolour"
-// }, 
-// {
-// 	"title" : "Pinball", 
-// 	"medium" : "Wood, clay, paint, construction paper"
-// }, 
-// {
-// 	"title" : "Childhood", 
-// 	"medium" : "Oil Pastel"
-// }
-// ]); 
-// 		textdisplay([
-// {
+xmlhttp.open("GET", url, true);
+xmlhttp.send();
+		textdisplay([
+{
+	"title" : "Flowers",
+	"medium" : "Watercolour"
+}, 
+{
+	"title" : "Pinball", 
+	"medium" : "Wood, clay, paint, construction paper"
+}, 
+{
+	"title" : "Childhood", 
+	"medium" : "Oil Pastel"
+}
+]); 
+// var description = '{
 // 	"general" : { 
 // 		"title" : "Title: ",
 // 		"focus" : "Focus: ",
@@ -80,15 +49,15 @@ xmlhttp.onreadystatechange = function() {
 // 		"inspiration" : "The impending evil that seems to come with life",
 // 		"notes" : "It is peculiar how joyful and openminded children are when they are young but as we grow, we seem to lose that. That is what this drawing aims to capture: the brightness and optimism of children being corrupted. Not meant to be pessimistic but it is how life seems to be. That is why we should all tap into our inner child and see the world from their point of view from time to time."
 // 		}
-// }]);
-// 	}
-// };
-
+// }'
 function textdisplay(arr) {
 	var out = "";
 	var i;
 	for(i = 0; i < arr.length; i++) {
-		out += arr[i].title + arr[i].medium + '<br>';
+		out += arr[i].title + '<br>' + 
+		arr[i].medium + '<br>';
 	}
-	document.getElementById("desc").innerHTML = out;
-}
+	document.getElementById("desc").innerHTML = out;}
+	// document.getElementById("desc").innerHTML = 
+	// 	myArr.general.title + "<br>" +
+	// 	myArr.flower.title+ "<br>"; 
