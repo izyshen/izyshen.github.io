@@ -2,6 +2,31 @@
 <html>
 <body>
 	<div id="desc"></div>
-	<script src="Javascript/test.js"></script>
+	<p>text</p>
+	<div id="desc2"></div>
+
+	<script>
+	var xmlhttp = new XMLHttpRequest();
+	var storage = "text.txt";
+
+	xmlhttp.onreadystatechange = function() {
+	if (this.readyState == 4 && this.status == 200) {
+		var myArr = JSON.parse(this.responseText);
+		textdisplay(myArr);
+	}
+	};
+	xmlhttp.open("GET", storage, true);
+	xmlhttp.send();
+
+	function textdisplay(arr) {
+		var out = "";
+		var i;
+		for(i = 0; i < arr.length; i++) {
+			out += arr[i].general.title + arr[i].flower.title + '<br>' + 
+			arr[i].general.medium + arr[i].flower.medium + '<br>';
+		}
+		document.getElementById("desc").innerHTML = out;
+	}
+	</script>
 </body>
 </html>
