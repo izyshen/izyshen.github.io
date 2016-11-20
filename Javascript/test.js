@@ -16,7 +16,7 @@ xmlhttp.send();
 // 		"focus" : "Focus: ",
 // 		"medium" : "Medium: ",
 // 		"inspiration" : "Inspiration: ",
-// 		"notes" : "Notes from the Author: "
+// 		"notes" : "Notes from the Artist: "
 // 		},
 // 	"flower" : {
 // 		"title" : "Bouquet of Joy",

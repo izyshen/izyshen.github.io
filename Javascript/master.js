@@ -42,7 +42,7 @@ function textdisplay(arr) {
 	var out = "";
 	var i;
 	for(i = 0; i < arr.length; i++) {
-		out += 
+		outflower += 
 		arr[i].general.title + arr[i].flower.title + '<br>' + 
 		'<br>' + 
 		arr[i].general.medium + arr[i].flower.medium + '<br>' + 
@@ -50,13 +50,50 @@ function textdisplay(arr) {
 		arr[i].general.focus + arr[i].flower.focus + '<br>' + 
 		'<br>' + 		
 		arr[i].general.notes + arr[i].flower.notes + '<br>';
+
+		outpinball += 
+		arr[i].general.title + arr[i].pinball.title + '<br>' + 
+		'<br>' + 
+		arr[i].general.medium + arr[i].pinball.medium + '<br>' + 
+		'<br>' + 		
+		arr[i].general.focus + arr[i].pinball.focus + '<br>' + 
+		'<br>' + 		
+		arr[i].general.notes + arr[i].pinball.notes + '<br>';
 	}
-	document.getElementById("title1").innerHTML = out;}
+	document.getElementById("desc-flower").innerHTML = outflower;
+	document.getElementById("desc-pinball").innerHTML = outpinball;}
 	// document.getElementById("desc").innerHTML = 
 	// 	myArr.general.title + "<br>" +
 	// 	myArr.flower.title+ "<br>"; 
 
 
+	function textdisplay(arr) {
+		var outflower = "";
+		var outpinball = "";		
+		var i;
+		for(i = 0; i < arr.length; i++) {
+			outflower += 
+		arr[i].general.title + arr[i].flower.title + '<br>' + 
+		'<br>' + 
+		arr[i].general.medium + arr[i].flower.medium + '<br>' + 
+		'<br>' + 		
+		arr[i].general.focus + arr[i].flower.focus + '<br>' + 
+		'<br>' + 		
+		arr[i].general.notes + arr[i].flower.notes + '<br>';
+
+		outpinball += 
+		arr[i].general.title + arr[i].pinball.title + '<br>' + 
+		'<br>' + 
+		arr[i].general.medium + arr[i].pinball.medium + '<br>' + 
+		'<br>' + 		
+		arr[i].general.focus + arr[i].pinball.focus + '<br>' + 
+		'<br>' + 		
+		arr[i].general.notes + arr[i].pinball.notes + '<br>';
+		}
+		document.getElementById("desc-flower").innerHTML = outflower;
+		document.getElementById("desc-pinball").innerHTML = outpinball;
+			// arr[i].general.title + "<br>" + arr[i].flower.title+ "<br>"; 		
+	}
 
 
 
