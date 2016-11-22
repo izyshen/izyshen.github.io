@@ -103,75 +103,56 @@ carousel = (function(){
   });
   navigate(0);
 })();
-// JSON 
-// var xobj = new XMLHttpRequest();
-// var desc = "Javascript/text.txt";
-// // xobj.overrideMimeType("application/json");
-// // xobj.open('GET', 'Javascript/master.json', true);
-// xobj.onreadystatechange = function () {
-//   if (xobj.readyState == 4 && xobj.status == "200") {
-//     // .open will NOT return a value but simply returns undefined in async mode so use a callback
-//     var gr11 = JSON.parse(xobj.responseText);
-//     myfunction(gr11);
+
+// store images in an array
+// var xmlhttp = new XMLHttpRequest();
+// // var url = "text.txt";
+
+// xmlhttp.onreadystatechange = function() {
+//   if (this.readyState == 4 && this.status == 200) {
+//     var myArr = JSON.parse(this.responseText);
+//     imgdisplay(myArr);
 //   }
+// };
+//     textdisplay([{
+//   "flower" : img src="image/IMG_2290.JPG"
 // }
-//   xobj.send(null);
-//   xobj.open('GET', desc, true);  
+// ]); 
 
-// function myfunction(text) {
-//   var out = "";
+// function textdisplay(arr) {
+//   var outflower = "";
+//   var outpinball = "";
+//   var outchild = "";    
 //   var i;
-//   for (i = 0; i < text.length; i++) {
-//     out += '<a href="' + text[i].url + '">' + text[i]display + '</a><br>';
-//   }
+//   for(i = 0; i < arr.length; i++) {
+//     outflower += 
+//     arr[i].general.title + arr[i].flower.title + '<br>' + 
+//     '<br>' + 
+//     arr[i].general.medium + arr[i].flower.medium + '<br>' + 
+//     '<br>' +    
+//     arr[i].general.focus + arr[i].flower.focus + '<br>' + 
+//     '<br>' +    
+//     arr[i].general.notes + arr[i].flower.notes + '<br>';
 
-// var obj = JSON.parse(desc);
+//     outpinball += 
+//     arr[i].general.title + arr[i].pinball.title + '<br>' + 
+//     '<br>' + 
+//     arr[i].general.medium + arr[i].pinball.medium + '<br>' + 
+//     '<br>' +    
+//     arr[i].general.focus + arr[i].pinball.inspiration + '<br>' + 
+//     '<br>' +    
+//     arr[i].general.notes + arr[i].pinball.notes + '<br>';
 
-// document.getElementById("title1").innerHTML = 
-// obj.general.title + "<br>" + 
-// obj.flower.title + "<br>"; 
-
-// document.getElementById("medium1").innerHTML = 
-// obj.general.medium + "<br>" +
-// obj.flower.medium + "<br>"; 
-
-// document.getElementById("focus1").innerHTML = 
-// obj.general.focus + "<br>" +
-// obj.flower.focus + "<br>"; 
-
-// document.getElementById("notes1").innerHTML = 
-// obj.general.notes + "<br>" + 
-// obj.flower.notes + "<br>";
-
-// document.getElementById("title2").innerHTML = 
-// obj.general.title + "<br>" + 
-// obj.pinball.title + "<br>";
-
-// document.getElementById("medium2").innerHTML = 
-// obj.general.medium + "<br>" +
-// obj.pinball.medium + "<br>";
-
-// document.getElementById("inspiration2").innerHTML = 
-// obj.general.inspiration + "<br>" +
-// obj.pinball.inspiration + "<br>";
-
-// document.getElementById("notes2").innerHTML =
-// obj.general.notes + "<br>" +
-// obj.pinball.notes + "<br>";
-
-// document.getElementById("title3").innerHTML = 
-// obj.general.title + "<br>" +
-// obj.child.title + "<br>";
-
-// document.getElementById("medium3").innerHTML = 
-// obj.general.medium + "<br>" +
-// obj.child.medium + "<br>";
-
-// document.getElementById("inspiration3").innerHTML = 
-// obj.general.inspiration + "<br>" +
-// obj.child.inspiration + "<br>";
-
-// document.getElementById("notes3").innerHTML = 
-// obj.general.notes + "<br>" +
-// obj.child.notes + "<br>";
+//     outchild += 
+//     arr[i].general.title + arr[i].child.title + '<br>' + 
+//     '<br>' + 
+//     arr[i].general.medium + arr[i].child.medium + '<br>' + 
+//     '<br>' +    
+//     arr[i].general.focus + arr[i].child.inspiration + '<br>' + 
+//     '<br>' +    
+//     arr[i].general.notes + arr[i].child.notes + '<br>';   
+//     }
+//   document.getElementById("desc-flower").innerHTML = outflower;
+//   document.getElementById("desc-pinball").innerHTML = outpinball; 
+//   document.getElementById("desc-child").innerHTML = outchild;
 // }
