@@ -19,6 +19,15 @@ jQuery(document).ready(function($) {
 					'<img src="' + image_href +'" />' +
 				'</div>' +	
 			'</div>';
+/*			var lightbox = 
+			'<div id="lightbox">' +
+				'<p id=nature-description>I feel most at peace when surrounded by nature.</p>' +
+				'<div id="content">' + //insert clicked link's href into img src
+					'<img src="' + image_href +'" />' +
+				'</div>' +	
+			'</div>';
+			// this produces a lightbox with different images appearing but same text
+*/
 				
 			//insert lightbox HTML into page
 			$('body').append(lightbox);
@@ -28,11 +37,3 @@ jQuery(document).ready(function($) {
 			$('#lightbox').hide();
 	});
 });
-
-var items = ["fish", "dog", "cat", "tom"];
-var text = "";
-var i;
-for(i = 0; i < items.length; i++) {
-    text += items[i] + "<br>";
-}
-document.getElementById("test").innerHTML = text;

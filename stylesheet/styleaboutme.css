@@ -41,6 +41,11 @@
     margin:auto;
     font-size:50px;
    	font-family: 'angelina';}
+#lightbox p#pinball-description {
+    color:#F0FFFF;
+    margin:auto;
+    font-size:50px;
+   	font-family: 'angelina';} 
 #lightbox img {
     max-height:600px;
     max-width:940px;
