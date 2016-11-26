@@ -59,7 +59,8 @@
 	display:inline-block;
 	border-radius:5px;}
 .lightbox_trigger:hover {
-	background-color:#F0FFFF;	}
+	background-color:#F0FFFF;
+	border-radius:5px;}
 #instructions {
 	text-align:center;
 	margin-top:20px;}
