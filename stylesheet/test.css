@@ -1,0 +1,7 @@
+.inline { display: none }
+.featherlight .legend {
+    position: absolute;
+    bottom: 0;
+    font-size: larger;
+    color: white;
+}
