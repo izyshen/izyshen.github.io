@@ -1,3 +1,38 @@
+// var xmlhttp = new XMLHttpRequest();
+// // var url = "text.txt";
+
+// xmlhttp.onreadystatechange = function() {
+// 	if (this.readyState == 4 && this.status == 200) {
+// 		var myArr = JSON.parse(this.responseText);
+// 		textdisplay(myArr);
+// 	}
+// };
+// 	captiondisplay([
+// 	{
+// 		"nature" : "I feel most at peace when surrounded by nature",
+// 		"sing" : "A tell-tale sign of my happiness is that I'll be singing!"
+// 	}
+// 	]); 
+
+// function captiondisplay(arr) {
+// 	var = "caption_nature";
+// 	var = "caption_sing";	
+// 	var i;
+// 	for(i = 0; i < arr.length; i++) {
+// 		caption_nature += arr[i].nature;
+// 		caption_sing += arr[i].sing;
+// 	}
+// 	document.getElementById("cap_nat").innerHTML = caption_nature;
+// 	document.getElementById("cap_sing").innerHTML = caption_sing;
+// }	
+
+// var captiondisplay = 
+// 		{"nature" : "I feel most at peace when surrounded by nature",
+// 		"sing" : "A tell-tale sign of my happiness is that I'll be singing!"}
+// var obj = JSON.parse(text);
+// document.getElementById("cap_nat").innerHTML = obj.nature;
+
+
 jQuery(document).ready(function($) {
 	$('.lightbox_trigger').click(function(e) {
 		e.preventDefault();
@@ -13,22 +48,13 @@ jQuery(document).ready(function($) {
 
 			//create HTML markup for lightbox window
 			var lightbox = 
-			'<div id="lightbox">' +
-				'<p>title</p>' +
+			'<div id="lightbox">' + 
+				'<p id="nature-description">I feel most at peace when surrounded by nature</p>' +
 				'<div id="content">' + //insert clicked link's href into img src
 					'<img src="' + image_href +'" />' +
 				'</div>' +	
 			'</div>';
-/*			var lightbox = 
-			'<div id="lightbox">' +
-				'<p id=nature-description>I feel most at peace when surrounded by nature.</p>' +
-				'<div id="content">' + //insert clicked link's href into img src
-					'<img src="' + image_href +'" />' +
-				'</div>' +	
-			'</div>';
-			// this produces a lightbox with different images appearing but same text
-*/
-				
+
 			//insert lightbox HTML into page
 			$('body').append(lightbox);
 		}
@@ -38,10 +64,3 @@ jQuery(document).ready(function($) {
 	});
 });
 
-// $('.lightbox-trigger').featherlightGallery({
-// 	filter: "a",
-// 	afterContent: function() {
-// 		this.$legend = this.$legend || $('<div class="legend"/>').insertAfter (this.$content);
-// 		this.$legend.text(this.$currentTarget.attr('title'));
-// 	}
-// });
