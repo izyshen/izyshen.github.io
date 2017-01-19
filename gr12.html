@@ -6,27 +6,39 @@
 		<link href="stylesheet/stylegr12.css" media="screen" rel="stylesheet" type="text/css"/>
 	</head>
 	<body>
-		<div id="title">
-			<h1>Twelfth Grade</h1>
+		<div id = "header">
+			<div id="title">
+				<h1>Twelfth Grade</h1>
+			</div>
+			<nav>
+				<ul id="navigation-bar">
+					<button class="dropdown"><a href="index.html">Home</a></button>
+					<button class="dropdown"><a href="aboutme.html">About Me</a></button>				
+					<button class="dropdown"><a href="gr9.html">Grade 9</a></button>				
+				</ul>
+			</nav>
 		</div>
-		<nav>
-			<ul id="navigation-bar">
-				<button class="dropdown"><a href="index.html">Home</a></button>
-				<button class="dropdown"><a href="aboutme.html">About Me</a></button>				
-				<button class="dropdown"><a href="gr9.html">Grade 9</a></button>				
-			</ul>
-		</nav>
-		<div class="scroll">
+		<div id = "scroll">
 			<div id="introduction">
 				<p>This is some text</p>
 			</div>
 		</div>
 		<style>
+			#header {
+				background-color:pink;
+			}
 			#title {
-				color:red;
+				text-align:center;
+			}
+			#introduction {
+				text-align:center;
 			}
 			#navigation-bar {
-				border-color: red
+				text-align:center;
+			}
+			#scroll {
+				background-color:grey;
+				height: 500px;
 			}
 		</style>
 	</body>
