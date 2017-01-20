@@ -18,27 +18,46 @@
 				</ul>
 			</nav>
 		</div>
-		<div id = "scroll">
-			<div id="introduction">
+		<div id = "content">
+			<div class = "section-grey">
 				<p>This is some text</p>
+			</div>
+			<div class = "section-white">
+				<p>This is a bit more text</p>
 			</div>
 		</div>
 		<style>
 			#header {
-				background-color:pink;
+				height:400px;
+				width: 100%;
+				background-color: pink;
+				box-shadow: 5px 5px 5px grey;
+				margin-bottom: 10px;
+				padding-right: 0;
+				top: 0;
 			}
 			#title {
-				text-align:center;
-			}
-			#introduction {
-				text-align:center;
+				text-align: center;
 			}
 			#navigation-bar {
-				text-align:center;
+				text-align: center;
 			}
-			#scroll {
-				background-color:grey;
-				height: 500px;
+			#content {
+				height: 1000px;
+			}
+			.section-white {
+/*				height: 500px;*/
+				text-align: center;
+				overflow: auto;
+				background-color: white;
+				border-radius: 10px
+			}
+			.section-grey {
+/*				height: 500px;*/
+				text-align: center;
+				overflow: auto;
+				background-color: #DDD;	
+				border-radius: 10px			
 			}
 		</style>
 	</body>
