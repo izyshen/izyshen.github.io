@@ -19,19 +19,26 @@
 			</nav>
 		</div>
 		<div id = "content">
-			<div class = "section-grey">
+			<div class = "section grey">
 				<p>This is some text</p>
 			</div>
-			<div class = "section-white">
+			<div class = "section white">
 				<p>This is a bit more text</p>
 			</div>
 		</div>
 		<style>
+			body {
+				background-image: url("image/supplies.jpg");
+				background-size: 100%;
+				background: static;
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+			}
 			#header {
 				height:400px;
 				width: 100%;
-				background-color: pink;
-				box-shadow: 5px 5px 5px grey;
+				background-color: white;
+				box-shadow: 5px 5px 10px grey;
 				margin-bottom: 10px;
 				padding-right: 0;
 				top: 0;
@@ -41,23 +48,36 @@
 			}
 			#navigation-bar {
 				text-align: center;
+				float: bottom;
 			}
 			#content {
 				height: 1000px;
 			}
-			.section-white {
-/*				height: 500px;*/
+			.section.white {
+				background-color: white;
+			}
+			.section.grey {
+				background-color: #DDD;
+			}
+			.section {
+				height: 500px;
+				width: 200px;
 				text-align: center;
 				overflow: auto;
-				background-color: white;
-				border-radius: 10px
+				border-radius: 10px;
+				clear: left;
+				margin: 10px;
 			}
-			.section-grey {
-/*				height: 500px;*/
+/*			.section-grey {
+				height: 500px;
+				width: 200px;
+				float: left;
 				text-align: center;
 				overflow: auto;
 				background-color: #DDD;	
-				border-radius: 10px			
-			}
+				border-radius: 10px;
+				clear: left;
+				padding: 10px;
+			}*/
 		</style>
 	</body>

@@ -2,7 +2,7 @@
 	width:auto;
 	margin-top:120px;}
 .textboxgrey {
-	width:32%;
+	width: 32%;
 	background-color:#DDD;
 	margin:5px;
 	height:300px;
@@ -10,13 +10,22 @@
 	display:inline-block;
 	border-radius:5px;}
 .textboxwhite {
-	width:32%;
+	width: 32%;
 	background-color:white;
 	margin:5px;
 	height:300px;
 	overflow:auto;
 	display:inline-block;
 	border-radius:5px;}
+.left {
+	float: left;
+}
+.mid {
+	float: center;
+}
+.right {
+	float: right;
+}
 .textboxwhite:hover {
 	background-color:#F0FFFF;
 	box-shadow:5px 5px 5px grey;
