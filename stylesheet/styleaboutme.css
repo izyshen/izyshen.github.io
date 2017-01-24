@@ -34,7 +34,7 @@
     position:fixed;
     top:0; 
     left:0; 
-    width:100%; 
+    width:0%; 
     height:100%; 
     background:url(overlay.png) repeat; 
     text-align:center;}
@@ -57,9 +57,9 @@
 .lightbox_trigger {
 	height:100%;
 	width:100%;
-	background-color:white;
 	display:inline-block;
-	border-radius:5px;}
+	border-radius:5px;
+	background-color: transparent;}
 .lightbox_trigger:hover {
 	background-color:#F0FFFF;
 	border-radius:5px;}
