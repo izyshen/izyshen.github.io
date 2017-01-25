@@ -67,12 +67,17 @@
 	background-color:#F0FFFF;
 	border-radius:5px;
 }
+.lightbox_trigger2 {
+	height: 100%;
+	width: 100%;
+	display:inline-block;
+	border-radius:5px;
+}
+.lightbox_trigger2:hover {
+	background-color:#F0FFFF;
+	border-radius:5px;
+}
 #instructions {
 	text-align:center;
 	margin-top:20px;
 }
-/*	width: 31%;
-	margin: 5px;
-	height: 300px;
-	display: inline-block;
-	border-radius: 5px;*/
