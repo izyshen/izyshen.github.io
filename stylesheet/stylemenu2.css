@@ -36,39 +36,37 @@
 	margin-bottom: 10px;
 	padding-right: 0;
 	top: 0;
+	border-radius:10px;
 }
 #navigation-bar {
 	list-style-type:none;
 	margin:8px;
 	height:200px;
 	padding:0;
-	background-color:grey;
+	background-color:white;
 	text-align:center;
 	left:0;
 	right:0;
 	top:60px;
+	bottom:0px;
+	position:relative;
 }
 .links {
+	height:170px;
+	width:100px;
 	display:block;
-	color:#F5FFFA;
+	color:#98A6D3;
 	padding:14px 16px;
 	text-align:center;
-	background-color:grey;
+	background-color:white;
 }
 #title {
 	background-color:#F0FFFF;
+	height:130px;
 	text-align:center;
-	top:0px;
 	width:100%;	
-	font-family: 'angelina';
+	font-family:'angelina';
 	font-size:20px;
-}
-#bottom {
-	background-color:#F0FFFF;
-	position:fixed;
-	bottom:0px;
-	height:80px;
-	width:100%;
 }
 @font-face {
 	font-family: 'angelina';
