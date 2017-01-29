@@ -1,11 +1,20 @@
 .dropbutton {
 	padding:0px 0px 0px 0px;
-	font-size:16px;
+	font-size:25px;
 	border:none;
-	color:#dddddd;
-	background-color:grey;
 	cursor:pointer;
 	height:200px;
+	width:200px;
+}
+.links {
+	height:173px;
+	width:200px;
+	display:block;
+	color:#98A6D3;
+	padding:14px 16px;
+	text-align:center;
+	background-color:white;
+	text-decoration: none;
 }
 .dropdown {
 	display:inline-block;
@@ -50,15 +59,6 @@
 	top:60px;
 	bottom:0px;
 	position:relative;
-}
-.links {
-	height:170px;
-	width:100px;
-	display:block;
-	color:#98A6D3;
-	padding:14px 16px;
-	text-align:center;
-	background-color:white;
 }
 #title {
 	background-color:#F0FFFF;
