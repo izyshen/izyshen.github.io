@@ -24,6 +24,11 @@
 }
 .dropdown:hover .dropdown-content {
 	display:block;
+	background-color:dimgrey;
+}
+/*make dropbutton hover change colour when dropdown is highlighted too;*/
+.dropdown:hover .dropdown-content a {
+	text-decoration: none;
 }
 .activepg {
 	background-color:black;
