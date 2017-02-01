@@ -16,23 +16,13 @@
 	min-width:160px;
 	box-shadow:0px 2px 6px 0px;
 }
-.dropdown-content:hover a:hover {
-	background-color:dimgrey;
-}
-.dropbutton:hover a:hover {
-	background-color:dimgrey;
-}
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content .dropbutton:hover {
 	display:block;
 	background-color:dimgrey;
 }
 /*make dropbutton hover change colour when dropdown is highlighted too;*/
 .dropdown:hover .dropdown-content a {
 	text-decoration: none;
-}
-.activepg {
-	background-color:black;
-	height:22px;
 }
 .header {
 	list-style-type:none;
