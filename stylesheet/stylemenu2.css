@@ -40,19 +40,16 @@
 #header {
 	height:400px;
 	width: 100%;
-	background-color: white;
+	background-color:white;
 	box-shadow: 5px 5px 10px grey;
-	margin-bottom: 10px;
-	padding-right: 0;
-	top: 0;
 	border-radius:10px;
+	top:0px;
 }
 #navigation-bar {
 	list-style-type:none;
 	margin:8px;
 	height:200px;
 	padding:0;
-	background-color:white;
 	text-align:center;
 	left:0;
 	right:0;
@@ -61,7 +58,6 @@
 	position:relative;
 }
 #title {
-	background-color:#F0FFFF;
 	height:130px;
 	text-align:center;
 	width:100%;	
