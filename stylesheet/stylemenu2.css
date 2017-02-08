@@ -48,7 +48,7 @@
 #navigation-bar {
 	list-style-type:none;
 	margin:8px;
-	height:200px;
+	height:100px;
 	padding:0;
 	text-align:center;
 	left:0;
@@ -62,7 +62,12 @@
 	text-align:center;
 	width:100%;	
 	font-family:'angelina';
-	font-size:20px;
+	font-size:50px;
+}
+#name {
+	font-size:30px;
+	float:right;
+	padding:10px;
 }
 @font-face {
 	font-family: 'angelina';
