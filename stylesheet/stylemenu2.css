@@ -29,6 +29,7 @@
 .dropbutton:hover a:hover {
 	background-color:dimgrey;
 	border-radius:10px;
+	text-shadow:2px 2px 10px black;	
 }
 .active {
 	background-color:black;

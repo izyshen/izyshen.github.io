@@ -15,21 +15,13 @@ body {
 }
 .section {
 	height: 500px;
-	width: 300px;
+	width: 50%;
 	text-align: center;
 	overflow: auto;
 	border-radius: 10px;
 	clear: left;
 	margin: 10px;
 }
-/*			.section-grey {
-	height: 500px;
-	width: 200px;
-	float: left;
-	text-align: center;
-	overflow: auto;
-	background-color: #DDD;	
-	border-radius: 10px;
-	clear: left;
-	padding: 10px;
-}*/
+.images {
+	height:200px;
+}
