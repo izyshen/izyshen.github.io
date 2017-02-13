@@ -69,3 +69,17 @@
 	src: local('angelina'), 
 	url('./fonts/angelina.woff') format('woff'), 
 	url('./fonts/angelina.ttf') format('truetype');}
+.dropdown-content {
+	display:none;
+	position:absolute;
+	min-width:160px;
+	box-shadow:0px 2px 6px 0px;
+}
+.dropdown:hover .dropdown-content .dropbutton:hover {
+	display:block;
+	background-color:dimgrey;
+}
+/*make dropbutton hover change colour when dropdown is highlighted too;*/
+.dropdown:hover .dropdown-content a {
+	text-decoration: none;
+}
