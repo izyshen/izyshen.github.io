@@ -75,11 +75,47 @@
 	min-width:160px;
 	box-shadow:0px 2px 6px 0px;
 }
-.dropdown:hover .dropdown-content .dropbutton:hover {
+.dropdown:hover .dropdown-content {
 	display:block;
-	background-color:dimgrey;
+	background-color:white;
+	border-radius: 10px;
 }
-/*make dropbutton hover change colour when dropdown is highlighted too;*/
+.dropdown:hover .dropbutton {
+
+}
 .dropdown:hover .dropdown-content a {
 	text-decoration: none;
+	padding:12px 16px;
+	display:block;
 }
+.dropdown {
+	position:relative;
+}
+
+
+
+
+#navigation-bar2 {
+	list-style-type:none;
+	overflow:hidden;
+	padding: 0px;
+	margin: 0px;
+}
+.links2 {
+	float:left;
+	padding:12px 16px;
+}
+.links2 a, .dropbutton {
+	display:inline-block;
+	text-decoration:none;
+	color:black;
+}
+.links2 a:hover, .dropdown:hover .dropbutton {
+	background-color:dimgrey;
+}
+.links2 .dropdown {
+	display:inline-block;
+}
+/*.dropdown-content a {
+
+}*/
