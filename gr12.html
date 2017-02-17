@@ -6,7 +6,7 @@
 		<link href="stylesheet/stylegr12.css" media="screen" rel="stylesheet" type="text/css"/>
 	</head>
 	<body>
-		<div id = "header">
+		<div id="header">
 		<p>.</p>
 			<h1 id="title">Twelfth Grade</h1>
 			<nav>
@@ -23,13 +23,21 @@
 							<a href="#pic2">Ant</a>
 					</div>
 				</ul> -->
-				<ul id="navigation-bar2">
-					<li class="links2"><a href="index.html"><p class="buttontext">Home</p></a></li>
-					<li class="links2"><a href="aboutme.html"><p class="buttontext">About Me</p></a></li>
-					<li class="links2"><a href="gr9.html"><p class="buttontext">Grade 9</p></a></li>
-					<li class="links2"><a href="gr10.html"><p class="buttontext">Grade 10</p></a></li>
-					<li class="links2"><a href="gr11.html"><p class="buttontext">Grade 11</p></a></li>
-					<li class="links2"><a href="gr12.html"><p class="buttontext">Grade 12</p></a></li>
+				<ul id="navigation-bar">
+					<div class="dropdown">
+						<button class="dropbutton"><a class="links" href="index.html"><p class="buttontext">Home</p></a></button>
+						<button class="dropbutton"><a class="links" href="aboutme.html"><p class="buttontext">About Me</p></a></button>
+						<button class="dropbutton"><a class="links" href="gr9.html"><p class="buttontext">Grade 9</p></a></button>
+						<button class="dropbutton"><a class="links" href="gr10.html"><p class="buttontext">Grade 10</p></a></button>
+					</div>
+					<div class="dropdown">
+						<button class="dropbutton"><a class="links" href="gr11.html"><p class="buttontext">Grade 11</p></a></button>
+					</div>
+					<div class="dropdown">
+						<button class="dropbutton"><a class="links active" href="gr12.html"><p class="buttontext">Grade 12</p></a></button>
+						<a class="dropdown-content" href="#pic1">Mice</a>
+						<a class="dropdown-content" href="#pic2">Ant</a>
+					</div>
 				</ul>
 			</nav>
 		</div>

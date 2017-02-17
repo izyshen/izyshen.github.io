@@ -1,4 +1,31 @@
-.dropbutton {
+#header {
+	height:400px;
+	width:100%;
+	background-color:white;
+	box-shadow: 5px 5px 10px grey;
+	border-radius:10px;
+	top:0px;
+}
+#title {
+	margin-bottom:0px;
+	text-align:center;
+	width:100%;	
+	font-family:'angelina';
+	font-size:80px;	
+}
+/*#navigation-bar {
+	list-style-type:none;
+	margin:8px;
+	height:100px;
+	padding:0;
+	text-align:center;
+	left:0;
+	right:0;
+	top:30px;
+	bottom:0px;
+	position:relative;
+}*/
+/*.dropbutton {
 	padding:0px 0px 0px 0px;
 	font-size:25px;
 	border:none;
@@ -25,6 +52,10 @@
 	display:none;
 	min-width:160px;
 	box-shadow:0px 2px 6px 0px;
+	display:none;
+	position:absolute;
+	min-width:160px;
+	box-shadow:0px 2px 6px 0px;
 }
 .dropbutton:hover a:hover {
 	background-color:dimgrey;
@@ -36,13 +67,25 @@
 	border-radius:10px;
 	text-shadow:2px 2px 10px white;	
 }
-#header {
-	height:400px;
-	width:100%;
+.dropdown:hover .dropdown-content {
+	display:block;
 	background-color:white;
-	box-shadow: 5px 5px 10px grey;
-	border-radius:10px;
-	top:0px;
+	border-radius: 10px;
+}
+.dropdown:hover .dropdown-content a {
+	text-decoration: none;
+	padding:12px 16px;
+	display:block;
+}
+.dropdown {
+	position:relative;
+}*/
+@font-face {
+	font-family: 'angelina';
+	src: url('./fonts/angelina.eot');
+	src: local('angelina'), 
+	url('./fonts/angelina.woff') format('woff'), 
+	url('./fonts/angelina.ttf') format('truetype');
 }
 #navigation-bar {
 	list-style-type:none;
@@ -56,66 +99,69 @@
 	bottom:0px;
 	position:relative;
 }
-#title {
-	margin-bottom:0px;
-	text-align:center;
-	width:100%;	
-	font-family:'angelina';
-	font-size:80px;	
+.dropbutton {
+	padding:0px 0px 0px 0px;
+	font-size:25px;
+	border:none;
+	cursor:pointer;
+	width:12%;
+	display:inline;
+	border-radius:10px;
 }
-@font-face {
-	font-family: 'angelina';
-	src: url('./fonts/angelina.eot');
-	src: local('angelina'), 
-	url('./fonts/angelina.woff') format('woff'), 
-	url('./fonts/angelina.ttf') format('truetype');}
-.dropdown-content {
+.links {
+	height:173px;
+	display:block;
+	color:#98A6D3;
+	padding:10px 16px;
+	text-align:center;
+	background-color:white;
+	text-decoration: none;
+}
+.buttontext {
+	float:center;
+	font-family:'angelina';
+	font-size:40px;
+}
+/*#gr11drop #gr12drop {
+	display:none;
+	min-width:160px;
+	box-shadow:0px 2px 6px 0px;
 	display:none;
 	position:absolute;
 	min-width:160px;
 	box-shadow:0px 2px 6px 0px;
+}*/
+.dropbutton:hover a:hover {
+	background-color:dimgrey;
+	border-radius:10px;
+	text-shadow:2px 2px 10px black;	
 }
-.dropdown:hover .dropdown-content {
+.active {
+	background-color:black;
+	border-radius:10px;
+	text-shadow:2px 2px 10px white;	
+}
+.dropdown-content {
+	display:none;
+	background-color:dimgrey;
+}
+.dropdown-content a {
+	color:#98A6D3;
+}
+.dropdown-content a:hover {
+	background-color:red;
+}
+/*.dropdown:hover #gr11drop #gr12drop {
 	display:block;
 	background-color:white;
 	border-radius: 10px;
 }
-.dropdown:hover .dropbutton {
-
-}
-.dropdown:hover .dropdown-content a {
+.dropdown:hover #gr11drop #gr12drop a {
 	text-decoration: none;
 	padding:12px 16px;
 	display:block;
-}
+}*/
 .dropdown {
 	position:relative;
+	display:inline;
 }
-
-
-
-
-#navigation-bar2 {
-	list-style-type:none;
-	overflow:hidden;
-	padding: 0px;
-	margin: 0px;
-}
-.links2 {
-	float:left;
-	padding:12px 16px;
-}
-.links2 a, .dropbutton {
-	display:inline-block;
-	text-decoration:none;
-	color:black;
-}
-.links2 a:hover, .dropdown:hover .dropbutton {
-	background-color:dimgrey;
-}
-.links2 .dropdown {
-	display:inline-block;
-}
-/*.dropdown-content a {
-
-}*/
