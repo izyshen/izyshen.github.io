@@ -104,6 +104,7 @@
 	font-size:25px;
 	border:none;
 	cursor:pointer;
+	float:center;
 	width:12%;
 	display:inline;
 	border-radius:10px;
@@ -143,13 +144,17 @@
 }
 .dropdown-content {
 	display:none;
-	background-color:dimgrey;
+	background-color:white;
+	border-radius:10px;
 }
 .dropdown-content a {
 	color:#98A6D3;
 }
 .dropdown-content a:hover {
 	background-color:red;
+}
+.dropdown:hover .dropdown-content {
+	display:block;
 }
 /*.dropdown:hover #gr11drop #gr12drop {
 	display:block;
