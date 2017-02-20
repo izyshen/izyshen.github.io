@@ -155,6 +155,11 @@
 }
 .dropdown:hover .dropdown-content {
 	display:block;
+	text-decoration: none;
+}
+.drop-text{
+	color:red;
+	background-color:yellow;
 }
 /*.dropdown:hover #gr11drop #gr12drop {
 	display:block;
