@@ -148,19 +148,20 @@
 	border-radius:10px;
 }
 .dropdown-content a {
-	color:#98A6D3;
+	color:black;
+	text-decoration:none;
 }
 .dropdown-content a:hover {
-	background-color:red;
+	background-color:#98A6D3;
 }
 .dropdown:hover .dropdown-content {
 	display:block;
 	text-decoration: none;
 }
-.drop-text{
+/*.drop-text {
 	color:red;
 	background-color:yellow;
-}
+}*/
 /*.dropdown:hover #gr11drop #gr12drop {
 	display:block;
 	background-color:white;
