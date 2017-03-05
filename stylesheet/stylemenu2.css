@@ -76,12 +76,18 @@ button a:hover, .dropbutton:hover .links {
 .dropdown:hover .dropdown-content {
 	display:block;
 	text-decoration: none;
+	background-color:white;
 }
 .drop-text {
 	margin:0px;
-	padding:10px;
+	padding:50px;
 	color:#98A6D3;
 	font-family:'angelina';
+}
+.drop-text:hover {
+	border-color:black;
+	border-style:solid;
+	border-width:1px;
 }
 .dropdown {
 	position:relative;
