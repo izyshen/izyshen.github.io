@@ -11,7 +11,7 @@ carousel = (function(){
   var counter = 0;
   var amount = items.length;
   var current = items[0];
-  box.classList.add('active');
+  box.classList.add('active_img');
   function navigate(direction) {
     current.classList.remove('current');
     counter = counter + direction;
@@ -48,7 +48,7 @@ carousel = (function(){
   var counter = 0;
   var amount = items.length;
   var current = items[0];
-  box.classList.add('active');
+  box.classList.add('active_img');
   function navigate(direction) {
     current.classList.remove('current');
     counter = counter + direction;
@@ -80,7 +80,7 @@ carousel = (function(){
   var counter = 0;
   var amount = items.length;
   var current = items[0];
-  box.classList.add('active');
+  box.classList.add('active_img');
   function navigate(direction) {
     current.classList.remove('current');
     counter = counter + direction;

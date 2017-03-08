@@ -21,17 +21,17 @@
   list-style: none;
   text-align: center;
 }
-/*.active {
+.active_img {
   height: 230px;
 }
-.active li {
+.active_img li {
   position: absolute;
   top: 200px;
 }
-.active li.current {
+.active_img li.current {
   top: 30px;
 }
-.active .buttons {
+.active_img .buttons {
   padding: 5px 0;
   background: #eee;
   text-align: center;
@@ -42,9 +42,9 @@
   border: none;
   display: none;
 }
-.active button {
+.active_img button {
   display: block;
-} */
+} 
 .offscreen {
   position: absolute;
   left: -2000px;
