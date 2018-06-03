@@ -1,6 +1,7 @@
 .scroll {
-	width:auto;
-	margin-top:120px;
+	width: 100%;
+	margin-top: 10px;
+	text-align: center;
 }
 .grey {
 	background-color: #DDD;
@@ -15,13 +16,13 @@
 	display: inline-block;
 	border-radius: 5px;}
 .left {
-	float: left;
+	display: inline-block;
 }
 .mid {
-	
+	display: inline-block;
 }
 .right {
-
+	display: inline-block;
 }
 .textbox:hover {
 	background-color:#F0FFFF;

@@ -1,40 +1,43 @@
+<!DOCTYPE html>
 <html>
 	<head>
-		<title>About Me</title>
-		<link href="stylesheet/styleaboutme.css" media="screen" rel="stylesheet" type="text/css"/>
-		<link href="stylesheet/stylemenu.css" media="screen" rel="stylesheet" type="text/css" />
+		<title>aboutMe</title>
+ 		<link href="stylesheet/stylemenu3.css" media="screen" rel="stylesheet" type="text/css" />
+		<link href="stylesheet/styleAboutMe.css" media="screen" rel="stylesheet" type="text/css"/>
 	</head>
+
 	<body>
-		<div id="title">
-			<h1>About Me</h1>
+		<div id="header">
+			<h1 id="title">Autobiography</h1>
+			<nav>
+				<ul id="navigation-bar">
+					<div class="dropdown">
+						<button class="dropbutton"><a class="links" href="index.html"><p class="buttontext">Home</p></a></button>
+						<button class="dropbutton"><a class="links active" href="aboutme.html"><p class="buttontext">About Me</p></a></button>
+						<button class="dropbutton"><a class="links" href="gr9.html"><p class="buttontext">Grade 9</p></a></button>
+						<button class="dropbutton"><a class="links" href="gr10.html"><p class="buttontext">Grade 10</p></a></button>
+					</div>
+					<div class="dropdown">
+						<button class="dropbutton"><a class="links" href="gr11.html"><p class="buttontext">Grade 11</p></a>
+							<div class="dropdown-content">
+								<a href="#pic1"><p class="drop-text">Flower</p></a>
+								<a href="#pic2"><p class="drop-text">Pinball</p></a>
+								<a href="#pic3"><p class="drop-text">Baby</p></a>
+							</div>
+						</button>
+					</div>
+					<div class="dropdown">
+						<button class="dropbutton"><a class="links" href="gr12.html"><p class="buttontext">Grade 12</p></a>
+							<div class="dropdown-content">
+								<a href="gr12.html#pic1"><p class="drop-text">Mice</p></a>
+								<a href="gr12.html#pic2"><p class="drop-text">Ant</p></a>
+							</div>
+						</button>
+					</div>
+				</ul>
+			</nav>
 		</div>
-		<nav>
-			<ul id="navigation-bar">
-				<div class="dropdown">			
-					<button class="dropbutton"><a class="index links" href="index.html">Home</a></button>
-				</div>
-				<div class="dropdown">
-					<button class="dropbutton"><a class="activepg links" href="aboutme.html">About Me</a></button>
-				</div>
-				<div class="dropdown">
-					<button class="dropbutton"><a class="links" href="gr9.html">Grade 9</a></button>
-				</div>
-				<div class="dropdown">
-					<button class="dropbutton"><a class="links" href="gr10.html">Grade 10</a></button>
-				</div>
-				<div class="dropdown">
-					<button class="dropbutton"><a class="gr11.html links" href="gr11.html">Grade 11</a></button>
-<!-- 					<div class="dropdown-content">
-						<a href="gr11.html#title1">Flowers</a>
-						<a href="gr11.html#title2">Pinball</a>
-						<a href="gr11.html#title3">Childhood</a>
-					</div> -->
-				</div>
-				<div class="dropdown">
-					<button class="dropbutton"><a class="gr12.html links" href="gr12.html">Grade 12</a></button>
-				</div>
-			</ul>
-		</nav>
+
 		<div class="scroll">
 			<div class="textbox grey left">							
 				<a class="lightbox_trigger" href="image/IMG_0563.JPG" data-title="caption"></a>
@@ -56,12 +59,19 @@
 				<a class="lightbox_trigger" href="image/IMG_0563.JPG" data-title="caption2"></a>  
 			</div>
 		</div>
+		
 		<div id="bottom">
 		</div>	
 		<script src="https://code.jquery.com/jquery-1.6.2.min.js"></script>
-		<script src="Javascript/aboutme.js"></script>		
+		<script src="Javascript/aboutme.js"></script>
 	</body>
-</html>	
-
-
-<!-- Javascript to produce different words for the images? -->
+	<style>
+		body {
+			background-image: url("image/supplies.jpg");
+			background-size: 100%;
+			background: static;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+		}
+	</style>
+</html>
