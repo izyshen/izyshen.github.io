@@ -14,14 +14,6 @@
 	font-size:80px;	
 }
 
-#introBlurb {
-	margin-bottom:0px;
-	margin-top: 84px;
-	text-align:center;
-	width:100%;	
-	font-family:'angelina';
-	font-size:30px;	
-}
 @font-face {
 	font-family: 'angelina';
 	src: url('./fonts/angelina.eot');
