@@ -1,50 +1,59 @@
+<!DOCTYPE html>
 <html>
 	<head>
 		<title>Grade 9(2010-2011)</title>
-		<link href="stylesheet/styleg9.css" media="screen" rel="stylesheet" type="text/css" />
-		<link href="stylesheet/stylemenu.css" media="screen" rel="stylesheet" type="text/css"/>
+ 		<link href="stylesheet/stylemenu2.css" media="screen" rel="stylesheet" type="text/css" />
+		<link href="stylesheet/stylegr12.css" media="screen" rel="stylesheet" type="text/css"/>
 	</head>
-	<body id="gr9body">
-	<div class="header">
-		<div id="title">
-			<h1>Ninth Grade</h1>
+	<body>
+		<div id="header">
+		<p>.</p>
+			<h1 id="title">Ninth Grade</h1>
+			<nav>
+				<ul id="navigation-bar">
+					<div class="dropdown">
+						<button class="dropbutton"><a class="links" href="index.html"><p class="buttontext">Home</p></a></button>
+						<button class="dropbutton"><a class="links" href="aboutme.html"><p class="buttontext">About Me</p></a></button>
+						<button class="dropbutton"><a class="links active" href="gr9.html"><p class="buttontext">Grade 9</p></a></button>
+						<button class="dropbutton"><a class="links" href="gr10.html"><p class="buttontext">Grade 10</p></a></button>
+					</div>
+					<div class="dropdown">
+						<button class="dropbutton"><a class="links" href="gr11.html"><p class="buttontext">Grade 11</p></a>
+							<div class="dropdown-content">
+								<a href="gr11.html#pic1"><p class="drop-text">Flower</p></a>
+								<a href="gr11.html#pic2"><p class="drop-text">Pinball</p></a>
+								<a href="gr11.html#pic3"><p class="drop-text">Baby</p></a>
+							</div>
+						</button>
+					</div>
+					<div class="dropdown">
+						<button class="dropbutton"><a class="links" href="gr12.html"><p class="buttontext">Grade 12</p></a>
+							<div class="dropdown-content">
+								<a href="#pic1"><p class="drop-text">Mice</p></a>
+								<a href="#pic2"><p class="drop-text">Ant</p></a>
+							</div>
+						</button>
+					</div>
+				</ul>
+			</nav>
 		</div>
-		<nav>	
-			<ul id="navigation-bar">
-				<div class="dropdown">
-					<button class="dropbutton"><a class="home links" href="index.html">Home</a></button>
-				</div>
-				<div class="dropdown">
-					<button class="dropbutton"><a class="aboutme links" href="aboutme.html">About Me</a></button>
-				</div>				
-				<div class="dropdown">
-					<button class="dropbutton"><a class="activepg links" href="gr9.html">Grade 9</a></button>
-				</div>
-				<div class="dropdown">
-					<button class="dropbutton"><a class="gr11 links" href="gr10.html">Grade 10</a></button>
-				</div>
-				<div class="dropdown">
-					<button class="dropbutton"><a class="gr11 links" href="gr11.html">Grade 11</a></button>
-<!-- 					<div class="dropdown-content">
-						<a href="gr11.html#title1">Flowers</a>
-						<a href="gr11.html#title2">Pinball</a>
-						<a href="gr11.html#title3">Childhood</a>
-					</div> -->
-				</div>
-			</ul>
-		</nav>
-	</div>
-	<div class="scroll">
-		<div id="description">
-			<img id="phoenix"src="image/IMG_0663.JPG" style="float:right;"/>
-			<p>Title: Unnamed</p>
-			<p>Inspiration: Replication of an online image</p>
-			<p>Medium: Oil pastel</p>
-			<p>Notes from the artist: This was made for my grade 9 art class. We went on a trip to the zoo to inspire us about the intricacies and detailing of various animals: the scales on a fish, the nice curvature of a tucan's beak and of course the beautiful feathers on a bird. I think it's obvious what I was inspired by. This may not be a real animal but nonetheless it's probably one of my favourites. </p>
+		<div id="content">
+			<div class = "section grey" id="pic1">
+				<p>Title: Phoenix</p>
+				<p>Medium: Oil Pastel</p>
+				<p>Purpose: Replication of an online image</p>
+				<p>Inspiration: This was made for my grade 9 art class. We went on a trip to the zoo to inspire us about the intricacies and detailing of various animals: the scales on a fish, the nice curvature of a tucan's beak and of course the beautiful feathers on a bird. I think it's obvious what I was inspired by. This may not be a real animal but nonetheless it's probably one of my favourites. </p>
+				<img class="images" src="image/IMG_0663.JPG">
+			</div>
 		</div>
-	</div>
-	<div id="bottom">
-	</div>
 	</body>
-
+	<style>
+		body {
+			background-image: url("image/supplies.jpg");
+			background-size: 100%;
+			background: static;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+}
+	</style>
 </html>

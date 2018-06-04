@@ -1,75 +1,59 @@
+<!DOCTYPE html>
 <html>
 	<head>
 		<title>Grade 10(2011-2012)</title>
-		<link href="stylesheet/styleg10.css" media="screen" rel="stylesheet" type="text/css" />
-		<link href="stylesheet/stylemenu.css" media="screen" rel="stylesheet" type="text/css"/>		
+ 		<link href="stylesheet/stylemenu2.css" media="screen" rel="stylesheet" type="text/css" />
+		<link href="stylesheet/stylegr12.css" media="screen" rel="stylesheet" type="text/css"/>
 	</head>
-	<body id="gr10body">
-	<div class="header">
-		<div id="title">
-			<h1 id="">Tenth Grade</h1>
+	<body>
+		<div id="header">
+		<p>.</p>
+			<h1 id="title">Tenth Grade</h1>
+			<nav>
+				<ul id="navigation-bar">
+					<div class="dropdown">
+						<button class="dropbutton"><a class="links" href="index.html"><p class="buttontext">Home</p></a></button>
+						<button class="dropbutton"><a class="links" href="aboutme.html"><p class="buttontext">About Me</p></a></button>
+						<button class="dropbutton"><a class="links" href="gr9.html"><p class="buttontext">Grade 9</p></a></button>
+						<button class="dropbutton"><a class="links active" href="gr10.html"><p class="buttontext">Grade 10</p></a></button>
+					</div>
+					<div class="dropdown">
+						<button class="dropbutton"><a class="links" href="gr11.html"><p class="buttontext">Grade 11</p></a>
+							<div class="dropdown-content">
+								<a href="gr11.html#pic1"><p class="drop-text">Flower</p></a>
+								<a href="gr11.html#pic2"><p class="drop-text">Pinball</p></a>
+								<a href="gr11.html#pic3"><p class="drop-text">Baby</p></a>
+							</div>
+						</button>
+					</div>
+					<div class="dropdown">
+						<button class="dropbutton"><a class="links" href="gr12.html"><p class="buttontext">Grade 12</p></a>
+							<div class="dropdown-content">
+								<a href="#pic1"><p class="drop-text">Mice</p></a>
+								<a href="#pic2"><p class="drop-text">Ant</p></a>
+							</div>
+						</button>
+					</div>
+				</ul>
+			</nav>
 		</div>
-		<nav> 
-			<ul id="navigation-bar">
-				<div class="dropdown">
-					<button class="dropbutton"><a class="index links" href="index.html">Home</a></button>
-				</div>
-				<div class="dropdown">
-					<button class="dropbutton"><a class="aboutme links" href="aboutme.html">About Me</a></button>
-				</div>
-				<div class="dropdown">
-					<button class="dropbutton"><a class="gr9 links" href="gr9.html">Grade 9</a></button>
-				</div>
-				<div class="dropdown">
-					<button class="dropbutton"><a class="activepg links" href="gr10.html">Grade 10</a></button>
-				</div>
-				<div class="dropdown">
-					<button class="dropbutton"><a class="gr11 links" href="gr11.html">Grade 11</a></button>
-<!-- 					<div class="dropdown-content">
-						<a href="gr11.html#title1">Flowers</a>
-						<a href="gr11.html#title2">Pinball</a>
-						<a href="gr11.html#title3">Childhood</a>
-					</div> -->
-				</div>
-			</ul>
-		</nav>
-	</div>
-	<div class="scroll">
-		<div class="art1">
-		<div id="description">
-			<img id="Fantasy"src="image/IMG_0377.JPG" style="float:right;"/>
-			<p id="title1">Title: A Home of Magic</p>
-			<p>Inspiration: Entry for an international art contest</p>
-			<p>Medium: Pencil Crayon</p>
-			<p>Notes from the artist: I started getting into reading about fantasy books about this time and I really liked dragons. No message here except I wanted to draw something pretty and colourful. I at least did one of the two... </p>
-
-			<img id="incomplete"src="image/IMG_0307.JPG" style="display:none;"/>
-				<div id=button>
-				<button type="button" onclick="document.getElementById('incomplete').style.display='block'">Photos of progress</button>
-				<button type="button" onclick="document.getElementById('incomplete').style.display='none'">Hide</button>
-		</div>
-			<p id="words"></p>
-
-			<script>
-			var text = '{"title": "Title: A Home of Magic", "medium": "Medium: pencil crayon", "inspiration": "Inspiration: Entry for an art contest", "notes": "Notes from the artist: I started getting into reading about fantasy books about this time and I really liked dragons. No message here except I wanted to draw something pretty and colourful."}'
-			var obj = JSON.parse(text);
-			document.getElementById("words").innerHTML = 
-			obj.title + "<br>" +
-			obj.medium + "<br>" + 
-			obj.inspiration + "<br>" +
-			obj.notes;
-			</script>
-		</div>
-
-		<div class="art2">
-		<div id="description2">
-			<img id="">
-
+		<div id="content">
+			<div class = "section grey" id="pic1">
+				<p>Title: A Home of Magic</p>
+				<p>Medium: Pencil Crayon</p>
+				<p>Purpose: Entry for an international art contest. </p>
+				<p>Notes: I started getting into reading about fantasy books about this time and I really liked dragons. No message here except I wanted to draw something pretty and colourful. I at least did one of the two...</p>
+				<img class="images" src="image/IMG_0377.JPG">
 			</div>
 		</div>
-	</div>
-	<div id="bottom">
-	</div>
 	</body>
-
+	<style>
+		body {
+	background-image: url("image/supplies.jpg");
+	background-size: 100%;
+	background: static;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+	</style>
 </html>
