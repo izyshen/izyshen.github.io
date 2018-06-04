@@ -95,4 +95,5 @@ button a:hover, .dropbutton:hover .links {
 .dropdown {
 	position:relative;
 	display:inline;
+	z-index: 1;
 }
