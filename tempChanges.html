@@ -1,59 +1,143 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Grade 10(2011-2012)</title>
- 		<link href="stylesheet/stylemenu2.css" media="screen" rel="stylesheet" type="text/css" />
-		<link href="stylesheet/stylegr12.css" media="screen" rel="stylesheet" type="text/css"/>
+		<title>Grade 11(2012-2013)</title>
+		<link href="stylesheet/stylegr12.css" media="screen" rel="stylesheet" type="text/css" />
+		<link href="stylesheet/stylemenu2.css" media="screen" rel="stylesheet" type="text/css"/>
+		<link href="stylesheet/stylecarousel.css" media="screen" rel="stylesheet" type="text/css"/>			
 	</head>
 	<body>
 		<div id="header">
 		<p>.</p>
-			<h1 id="title">Tenth Grade</h1>
+			<h1 id="title">Eleventh Grade</h1>
 			<nav>
 				<ul id="navigation-bar">
 					<div class="dropdown">
 						<button class="dropbutton"><a class="links" href="index.html"><p class="buttontext">Home</p></a></button>
 						<button class="dropbutton"><a class="links" href="aboutme.html"><p class="buttontext">About Me</p></a></button>
 						<button class="dropbutton"><a class="links" href="gr9.html"><p class="buttontext">Grade 9</p></a></button>
-						<button class="dropbutton"><a class="links active" href="gr10.html"><p class="buttontext">Grade 10</p></a></button>
+						<button class="dropbutton"><a class="links" href="gr10.html"><p class="buttontext">Grade 10</p></a></button>
 					</div>
 					<div class="dropdown">
-						<button class="dropbutton"><a class="links" href="gr11.html"><p class="buttontext">Grade 11</p></a>
+						<button class="dropbutton"><a class="links active" href="gr11.html"><p class="buttontext">Grade 11</p></a>
 							<div class="dropdown-content">
-								<a href="gr11.html#pic1"><p class="drop-text">Flower</p></a>
-								<a href="gr11.html#pic2"><p class="drop-text">Pinball</p></a>
-								<a href="gr11.html#pic3"><p class="drop-text">Baby</p></a>
+								<a href="#pic1"><p class="drop-text">Flower</p></a>
+								<a href="#pic2"><p class="drop-text">Pinball</p></a>
+								<a href="#pic3"><p class="drop-text">Baby</p></a>
 							</div>
 						</button>
 					</div>
 					<div class="dropdown">
 						<button class="dropbutton"><a class="links" href="gr12.html"><p class="buttontext">Grade 12</p></a>
 							<div class="dropdown-content">
-								<a href="#pic1"><p class="drop-text">Mice</p></a>
-								<a href="#pic2"><p class="drop-text">Ant</p></a>
+								<a href="gr12.html#pic1"><p class="drop-text">Mice</p></a>
+								<a href="gr12.html#pic2"><p class="drop-text">Ant</p></a>
 							</div>
 						</button>
 					</div>
 				</ul>
 			</nav>
 		</div>
-		<div id="content">
+
+<!-- first content box -->
+		<div class="content">
 			<div class = "section grey" id="pic1">
-				<p>Title: A Home of Magic</p>
-				<p>Medium: Pencil Crayon</p>
-				<p>Purpose: Entry for an international art contest. </p>
-				<p>Notes: I started getting into reading about fantasy books about this time and I really liked dragons. No message here except I wanted to draw something pretty and colourful. I at least did one of the two...</p>
-				<img class="images" src="image/IMG_0377.JPG">
+				<p>Title: Bouquet of Joy</p>
+				<p>Medium: Watercolour</p>
+				<p>Inspiration: I wanted to immortalize the beauty of flowers. 
+				Their subtle scents, the vibrant colours and the assiciated 
+				feelings of love and gratitude induce smiles on the faces of many. </p>
+				<div class="lightbox_div">
+					<img class="images" src="image/IMG_2346.JPG">
+					<a class="lightbox_trigger" href="image/IMG_2346.JPG"></a>
+				</div>
+
+			<div class="textbox white mid">
+				<a class="lightbox_trigger" href="image/stagemic.jpg" data-title="caption2"></a>          
+			</div>	
+<!--carousel -->
+					<div class="carouselbox1">
+						<div class="buttons">
+						   	<button class="prev">
+						      Previous <span class="offscreen">Previous</span>
+						    </button>
+						    <button class="next">
+						      Next <span class="offscreen">Next</span>
+						    </button>
+			 			</div>
+					  	<ol class="content">
+					  		<li><img class="incompleteimages" src="image/IMG_2290.JPG"/></li>
+					    	<li><img class="incompleteimages" src="image/IMG_2309.JPG"/></li>
+					  	</ol>
+					</div>
 			</div>
+			<div class = "section white" id="pic2">
+				<p>Title: A Pinball Tea Party</p>
+				<p>Medium: Clay</p>
+				<p>Inspiration: A reinterpretation of artwork by Charles Bell but in the form of objects for a tea party. Created as a class project.</p>
+				<img class="images" src="image/IMG_2522.JPG"/>
+			</div>
+
+<!-- 			<div class="boxwhite">
+				<div class="description"> 
+					<img id="Pinball"src="image/IMG_2522.JPG"/>
+					<p id="desc-pinball"></p>
+				</div>
+				<div class="carouselbox2">
+					<div class="buttons">
+					   	<button class="prev">
+					      Previous <span class="offscreen">Previous</span>
+					    </button>
+					    <button class="next">
+					      Next <span class="offscreen">Next</span> 
+					    </button>
+					</div>
+				  	<ol class="content">
+				  		<li><img class="incompleteimages" src="image/IMG_2516.JPG"/></li>
+				    	<li><img class="incompleteimages" src="image/IMG_2510.JPG"/></li>
+				  	</ol>
+				</div>
+			</div> -->
+			<div class = "section grey" id="pic3">
+				<p>Title: There Exists an End to Childhood</p>
+				<p>Medium: Oil pastel, chalk pastel</p>
+				<p>Inspiration: As I was approaching university, everyone wanted to know what I wanted to be. Like most of my friends, I didn't know. This piece was created to acknowledge and pay tribute to those "ending" moments because in a general aspect, we all face many of those. What's important is how we handle our next steps. </p>
+				<img class="images" src="image/IMG_2584.JPG"/>	
+			</div>
+<!-- 
+			<div class="boxgrey">
+				<div class="description">
+					<img id="Childhood"src="image/IMG_2584.JPG"/>			
+					<p id="desc-child"></p>
+				</div>
+				<div class="carouselbox3">
+					<div class="buttons">
+					   	<button class="prev">
+					      Previous <span class="offscreen">Previous</span>
+					    </button>
+					    <button class="next">
+					      <span class="offscreen">Next</span> Next 
+					    </button>
+					</div>
+				  <ol class="content">
+				  	<li><img class="incompleteimages" src="image/IMG_2575.JPG"/></li>
+				    <li><img class="incompleteimages" src="image/IMG_2573.JPG"/></li>
+				  </ol>
+				</div>
+			</div> -->
+			<script src="Javascript/gr11.js"></script>
+			<script src="Javascript/master.js"></script>
+			<script src="https://code.jquery.com/jquery-1.6.2.min.js"></script>
+			<script src="Javascript/aboutme.js"></script>
 		</div>
 	</body>
 	<style>
-		body {
+	body {
 	background-image: url("image/supplies.jpg");
 	background-size: 100%;
 	background: static;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-}
+	}
 	</style>
 </html>
